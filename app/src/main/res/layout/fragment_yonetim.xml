@@ -1,0 +1,130 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pages.YonetimFragment">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:fillViewport="true">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:textColor="#37a7db"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:inputType="textMultiLine"
+                android:text="Üretim Yönetimi Danışmanlığı"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/yonetim" />
+
+
+            <TextView
+                android:text="Rekabet ve globalleşme gibi çağımıza ait kriterin de etkisi ve yönlendirmesi ile işletmelerin faaliyetlerini sürdürebilmeleri ve gelişebilmeleri için kaynaklarını verimli bir biçimde kullanmaları gerekmektedir. Üretim (İmalat Sanayi) sektöründe faaliyet gösteren işletmelerde bu verimlilik ihtiyacı sistemin bir parçası değil sistemin kendisi olmaya başlamıştır. Bu durumda işletmelerin sistem ile uyumlu bir şekilde hareket edebilecek esnekliğe sahip olmaları gerekmektedir. Üretim işletmeleri bünyesinde verdiğimiz danışmanlık hizmetleri kapsamında işletmeler, üretim süreçlerini iyileştirerek, etkin ve verimli bir üretim sistemine sahip olmakta ve performans analizlerini gerçek zamanlı olarak yapabilmektedirler. Üretim Yönetim Danışmanlığı Hizmetlerimiz;"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:inputType="textMultiLine"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:text="      • Üretim süreçlerinin oluşturulması ve iyileştirilmesi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:text="      • JIT (Tam zamanında), OBPM (Siparişe Dayalı), Lean (Yalın) üretim yöntemlerinin işletmeye uyarlanması"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:text="      • Verimlilik ve etkinlik ölçme - değerlendirme sisteminin kurulması"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:text="      • Tesis ve Depo verimlilik sisteminin kurulması"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:text="      • Üretimden gerçek zamanlı veri toplama ve analiz sisteminin kurulması"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:text="      • Üretim darboğazlarının belirlenmesi ve is-zaman verimliliğinin arttırılması"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:text="      • Bakım Planlama Sisteminin kurulması"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:text="      • Malzeme Gereksinim Planlama (MPR-1), Üretim Planlama (MRP-2) sistemlerinin kurulması"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:text="      • Maliyet Muhasebesi uygulamalarının işletmelere uyarlanması ve Maliyet Muhasebesi Sisteminin kurulması"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:text="      • Kalite kontrol sisteminin işletmelere uyarlanarak kötü kalite maliyetlerinin azaltılması"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

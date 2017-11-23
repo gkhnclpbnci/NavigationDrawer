@@ -1,0 +1,70 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pages.HakkimizdaFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:fillViewport="true">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="BİZ KİMİZ?"
+                android:textColor="#37a7db"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:inputType="textMultiLine"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:inputType="textMultiLine"
+                android:text="İdeaktif Danışmanlık ve Yazılım Ltd, Danışmanlık ve Yazılım Sektöründe inovatif çözümler üretmek amacıyla Bilim Sanayi ve Teknoloji Bakanlığının desteğiyle İzmir Dokuz Eylül Üniversitesi DEPARK Teknoloji Bölgesinde kurulmuştur."
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:text="İnovatif fikirlerin aktiviteye dönüştürülmesi amacıyla kurulan ve Ide ve Aktif kelimelerinden markasını oluşturan ideaktif, sektörde yenilikçi ve değer yaratan çözümleri müşterilerine sunmayı ilke edinmiştir."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:inputType="textMultiLine"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp"/>
+            <TextView
+                android:text="Teknoloji Bölgesindeki merkezinde AR-GE çalışmaları yapan ideaktif’in, Bölge Ofisinde ise ERP Çözümleri ve Danışmanlık hizmetleri sunulmaktadır. 14 Kişilik Uzman kadrosu ile hizmet veren ideaktif, teknoloji, Kurumsal Kaynak Planlama, Üretim, İş Geliştirme ve Kurumsal Danışmanlık alanlarında 18 yılı aşkın bir tecrübeye sahiptir."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:inputType="textMultiLine"
+                android:textSize="16sp"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <TextView
+                android:text="İdeaktif Danışmanlık ve Yazılım Ltd. hizmet yeterliliği ve müşteri memnuniyeti konularında ISO 9001:2008, ISO 10002 ve TSE-HYB (Danışmanlık ve Yazılım Geliştirme alanlarında Hizmet Yeterlilik) belgelerine sahiptir."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:inputType="textMultiLine"
+                android:textSize="16sp"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

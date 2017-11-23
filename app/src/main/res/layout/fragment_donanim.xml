@@ -1,0 +1,88 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pages.DonanimFragment">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:fillViewport="true">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:textColor="#37a7db"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:inputType="textMultiLine"
+                android:text="Donanım Ürünleri"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/donanim" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:inputType="textMultiLine"
+                android:text="PC-Server-Çevre Birimleri Bakım/Destek, müşterilerin BT altyapısında yer alan PC, Server ve çevre ürünlerinin (yazıcı, tarayıcı, vb.) uçtan uca, standartlara uygun bir biçimde kurulmasını ve çalıştırılmasını sağlamak üzere belirli servis seviyelerine uygun olarak verilen teknik destek hizmetleridir. Çağrı bazlı ve servis seviyesi esaslı olarak yürütülür. PC-Server-Çevre Birimleri Bakım/Destek hizmetleri iki ana grup altında verilmektedir:"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:textColor="#37a7db"
+                android:text="Donanım Bakım/Onarım Hizmetleri"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:inputType="textMultiLine"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp"/>
+            <TextView
+                android:text="PC, Server ve çevre birimlerinde oluşan donanım problemlerinin giderilmesine ve sorunsuz çalışmayı sağlamaya yönelik hizmetlerdir. “Parça Dahil” veya “Parça Hariç” olarak verilebilir. Servis sağlayıcı ile müşteri arasındaki hizmet sözleşmesinin içeriğine bağlı olarak, donanım, bakım-onarım hizmetleri kapsamında “Periyodik Bakım” hizmeti de söz konusu olabilir. Bu hizmetler, donanımların üzerinde koşan işletim sistemlerine ya da diğer yazılım bileşenlerine verilecek olan destek hizmetlerini kapsamaz."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:inputType="textMultiLine"
+                android:textSize="16sp"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <TextView
+                android:text="Sistem Destek Hizmetleri"
+                android:textColor="#37a7db"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:inputType="textMultiLine"
+                android:textSize="16sp"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <TextView
+                android:text="PC, Server ve çevre birimleri üzerinde yer alan işletim sistemlerinde ve bu işletim sistemleri (paketi) ile birlikte gelen servislerde, alt uygulamalarda karşılaşılan problemlerin giderilmesine ve sorunsuz çalışmayı sağlamaya yönelik hizmetlerdir. “Uzaktan” veya “Müşteri Yerinde” verilebilir. Bu hizmetler, işletim sistemleri dışında kalan yazılımlara-uygulamalara ve işletim sistemlerinin üzerinde çalıştığı donanım bileşenlerine verilecek olan destek hizmetlerini kapsamaz."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:inputType="textMultiLine"
+                android:textSize="16sp"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>

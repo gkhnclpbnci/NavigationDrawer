@@ -1,0 +1,103 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pages.YazilimFragment">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:fillViewport="true">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:src="@drawable/yazilim" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:inputType="textMultiLine"
+                android:text="İş süreçlerini hızlı ve doğru bir şekilde sürdürebilmek isteyen işletmeler ihtiyaçları doğrultusunda yazılımlar kullanmaktadırlar. Bu yazılımlar ERP yazılımları, Ofis yazılımları gibi genel amaçlı yazılımlar olabilirken, Grafik Tasarım Yazılımları, Üretim Yazılımları gibi sektör bazlı yazılımlar da olabilmektedir. İşletmeler için Paket yazılım olarak nitelendirilen ve genele uygun yazılımların kullanımı maliyet olarak uygun olmakla birlikte, işletme ihtiyaçlarına ve hedeflerine tam uyum konusunda yetersiz kalmaktadır. Bu noktada işletmelerin, kendilerine tam uyum sağlayan özelleştirilmiş yazılımlar kullanma ihtiyacı doğmaktadır. IT Global olarak mevcut iş yazılımlarının yetersiz geldiği durumlarda, 20 yıllık deneyimimiz ile mevcut yazılımlara entegre olabilen ek uygulamalar ve / veya birebir müşterinin ihtiyaçlarını karşılayan tüketici dostu yazılımlar üretmekteyiz. Yazılım geliştirme süreçlerimiz içerisinde müşterilerimiz ile birlikte hareket edip, onların ihtiyaçları doğrultusunda ve kullanım rahatlığını en üst düzeyde tutacak şekilde çalışmalarımızı gerçekleştiriyoruz."
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:text="Çalışmalarımızda analiz aşamasından sonra proje ile ilgili bir iş planı oluşturmaktayız. Müşterilerimiz ile mutabık kalınan bu plan sonrası geliştirme, test ve kurulum işlemlerinin ardından, üretilen yazılımlarımız kullanıcı testi yapılarak müşterilerimize teslim edilmektedir. En son teknolojileri takip eden ve uygulayan ekibimiz ile klasik uygulamalara ilave olarak web uygulamaları ve mobil uygulamalar üzerinde çözümler üretmekteyiz. İhtiyaca bağlı olarak işletmelerin kullandığı diğer paket programlardan (ERP, CRM v.s.) veri aktarımı ile entegre edilerek yapılan çalışmalarda işletme çalışanlarına, iş süreçlerinde kolaylık ve zaman tasarrufu sağlanmaktadır. IT Global olarak tüm yazılım çözümlerimiz Teknoloji Geliştirme Bölgesi içerisinde bulunan Yazılım Ar-Ge ofisimizde, Türk Standartları Enstitüsü (TSE) standartlarında üretilmektedir. Yazılım hizmetlerinin sağlayacağı faydalar;"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:inputType="textMultiLine"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp"/>
+            <TextView
+                android:text="      • İş süreçlerine %100 uyum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:text="      • İşletme İhtiyaçlarına %100 Uyum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:text="      • İşgücü ve Zamandan Tasarruf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:text="      • Yüksek performans ve Kalite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:text="      • Sürdürülebilirlik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:text="      • Esnek ve Sürekli İyileştirilebilir Altyapı"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:text="      • İhtiyaca Yönelik Platform Çözümleri"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

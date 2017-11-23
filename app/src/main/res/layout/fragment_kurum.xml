@@ -1,0 +1,141 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pages.KurumFragment">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:fillViewport="true">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:textColor="#37a7db"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:inputType="textMultiLine"
+                android:text="Üretim Yönetimi Danışmanlığı"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/kurum" />
+
+
+            <TextView
+                android:text="Kurum Kültürü veya işletmelerde paylaşılmış bir geçmişi ifade eder. İşletmelerin yöneticileri, patronları, çalışanları ve paydaşları zaman içerisinde farkında olmadan bu kültürü oluşturur ve geliştirir. Kurum kültürünün, çalışanların firmalarına bağlılıkları, motivasyonları, iş performansları ve işletmeyi temsil şekillerindeki etkisi büyüktür. Bu kültür, işletmenin çalışanlara ve müşterilere karşı davranışlarının ve faaliyetlerin yürütülme biçiminin temel hareket noktasıdır. İşletmenin pazardaki bilinilirliği ve karakteri, planlı veya plansız olarak oluşan kurum kültürünün bir yansımasıdır. İşletmenin mevcut kültür ve beklenen kültür düzeyinin ölçülmesi işletme başarısı için kural, politika ve süreçlerden daha belirleyici olmaktadır. Kurum kültürü analizleri, uzmanlık ve yoğun bir çalışma gerektirmesi nedeniyle işletmeler tarafından zor bir süreç olarak görülmektedir. IT Global olarak Kurum Kültürü Danışmanlığı kapsamında, Türkiye yapısına uygun olarak, T.C. Bilim Sanayi ve Teknoloji Bakanlığının desteğiyle Teknoloji Geliştirme Bölgesinde ürettiğimiz yazılım ile bu zor ve maliyetli süreci kolaylıkla işletmelere uygulayabiliyoruz. Sistematik olarak uygulanabilen ve dijital olarak raporlanabilen bu hizmet kapsamında,
+                İşletme Genelinde,
+                Departman bazında,
+                Birim bazında,
+kültür analizleri yapılarak, mevcut ve istenen kurum kültürü raporlanabilmektedir. Gelişim senaryoları ile birlikte sunulan kültür raporu doğrultusunda işletmeler IK süreçlerinde (İşe alım, Terfi, vb.) karar mekanizmalarını teknik ve bilimsel veriler ile destekleyebilmektedirler. Kurum kültürü danıişmanlığını sağlayacağı faydalar;"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:inputType="textMultiLine"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:text="      • Mevcut ve arzu edilen Kurum Kültürü düzeylerinin belirlenmesi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:text="      • İşletme, departman ve birim bazında uyum-uyumsuzluk alanlarının belirlenmesi ve raporlanması"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:text="      • Verimlilik ve etkinlik ölçme - değerlendirme sisteminin kurulması"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:text="      • Periyodik olarak uygulandığında kurum gelişiminin izlenebilmesi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:text="      • İç çatışmalar ve performans kaybının engellenmesi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:text="      • Çalışan motivasyonunun arttırılması"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:text="      • Ürün ve hizmette çalışan kaynaklı hataların minimize edilmesi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:text="      • İşletme başarısının ve pazardaki prestijinin arttırılması"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:text="      • Çalışan aidiyetinin yükseltilmesi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:text="      • İşletme gelişim senaryolarının belirlenebilmesi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:text="      • İşe alım ve terfi süreçlerinin kolaylaştırılması"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

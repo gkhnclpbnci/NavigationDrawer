@@ -1,0 +1,86 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pages.B2BFragment">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:fillViewport="true">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:textColor="#37a7db"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:inputType="textMultiLine"
+                android:text="İdeaktif B2B Müşteri Web Portalı Yazılımı"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/b2b" />
+
+
+            <TextView
+                android:text="İdeaktif B2B Müşteri Web Portalı yazılımı, işletmelerin müşteri ile ilgili sipariş süreçlerini web üzerinden yönetebilecekleri bir portal yönetim yazılımıdır.
+Bu portal sayesinde müşterilerine verecekleri şifreler ile, müşteriler sisteme dahil olarak, işletmeye vermek istedikleri ürün siparişlerini bulut üzerinden verebilmektedirler.
+Müşteriler kendi profillerini ve gerekli evraklarını sisteme yükleyebilmekte ve portal sahibi firmanın duyurularına anlık ulaşabilmektedirler.
+Bu özelliklere ek olarak, müşteriler verdikleri siparişin durumunu (Üretimde, Yolda, Teslim Edildi vb.) ve teslimat terminini portal üzerinden takip edebilmektedirler.
+İdeaktif B2B Müşteri Web Portalı Yazılımını tercih eden işletmeler;"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:inputType="textMultiLine"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:text="      • Müşteri performanslarını kayıtlamak ve izlemek için vakit kaybetmemekte ve sistem üzerinden raporlayabilmektedirler."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:text="      • Müşterilerin yanlış ürün sipariş etme riskini minimize etmektedirler."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:text="      • Müşteri siparişlerinin alınması için ayrıca bir satış ekibi kurmak zorunda kalmamaktadırlar."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:text="      • Müşteriye özel fiyatları, teslim şeklini, teslim süresini müşteriler ile görüşmeye gerek kalmadan sistem üzerinden güncelleyebilmekte, ve müşteriler güncel bilgilere anlık olarak ulaşabilmektedirler."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>

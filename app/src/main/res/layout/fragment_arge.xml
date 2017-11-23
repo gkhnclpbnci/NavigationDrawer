@@ -1,0 +1,100 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pages.ArgeFragment">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:fillViewport="true">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:textColor="#37a7db"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:inputType="textMultiLine"
+                android:text="Arge ve Bilgi Teknolojileri Danışmanlığı"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/arge" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:inputType="textMultiLine"
+                android:text="Sürdürülebilir rekabet ortamında işletmelerin varlığına devam edebilmesi için için “AR-GE” ve “İnovasyon” kavramları vazgeçilmez iki unsur haline gelmiştir. İşletmeler, AR-GE ve inovasyonu etkili ve verimli biçimde kullanmaları için bu konuların etkin yönetimine ihtiyaç duymaktadır. Bütün stratejik kararlar işletmenin geleceği açısından önemlidir. Ancak AR-GE ile ilgili kararlar işletmenin yeni bir ürün ve / veya hizmet yaratması açısından önemli olmasının yanında birçok belirsizliğin bulunduğu bir ortamda alındığı için zor kararlardır. Araştırma ve geliştirme (AR-GE) kararları, işletmenin tüm fonksiyonlarını etkilediği için karmaşık bir nitelik kazanır ve stratejik karar niteliği taşırlar. İşletmelerdeki yöneticiler, pazarlama, satış ve satış sonrası hizmetler, üretim ve finans üzerindeki etkilerini düşünmeden AR-GE ile ilgili kararlar verdiklerinde organizasyonel parçalanmalara, şikâyetlere, sorunlara ve personel devir hızının artmasına sebep olabilirler. Bu durumlar ile karşı karşıya kalmamak için profesyonel AR-GE yönetimi işletmeler için hayati önem taşımaktadır. IT Global olarak AR-GE konusunda yetkin ve tecrübeli uzmanlarımız ile işletmelere kalite maliyetlerini de göz önünde bulundurarak,"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:text="      • Ar-Ge Projelerinin oluşturulması"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:text="      • Ar-Ge Proje Finansmanı"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:text="      • Ar-Ge Projesinin Yapılabilirlik Etüdü"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:text="      • Proje Takibi ve Sonuçlandırılması"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:text="      • Proje sonucu ürünün Satış ve Pazarlama Faaliyetleri"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:text="Konularında danışmanlık hizmeti vererek en optimum çözümleri sunmaktayız."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>
