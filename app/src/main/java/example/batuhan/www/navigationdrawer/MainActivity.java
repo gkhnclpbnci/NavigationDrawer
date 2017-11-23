@@ -63,6 +63,8 @@ public class MainActivity extends AppCompatActivity
         } else {
             expandableList.setIndicatorBoundsRelative(expandableList.getRight()- 80, expandableList.getWidth());
         }
+
+
     }
 
     @Override
