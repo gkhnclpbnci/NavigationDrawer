@@ -2,12 +2,16 @@ package pages;
 
 import android.app.Activity;
 import android.content.Context;
+import android.media.Image;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+
+import com.squareup.picasso.Picasso;
 
 import example.batuhan.www.navigationdrawer.MainActivity;
 import example.batuhan.www.navigationdrawer.R;
@@ -33,6 +37,9 @@ public class ErpFragment extends Fragment {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_erp, container, false);
 
+        ImageView imageView =(ImageView) rootView.findViewById(R.id.imageView);
+
+        Picasso.with(getActivity()).load(R.drawable.erp).centerCrop().fit().into(imageView);
         return rootView;
     }
 

@@ -1,18 +1,17 @@
 package pages;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
-import android.content.res.TypedArray;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ListView;
+import android.widget.LinearLayout;
 
+import example.batuhan.www.navigationdrawer.Baslik1Activity;
+import example.batuhan.www.navigationdrawer.Baslik2Activity;
+import example.batuhan.www.navigationdrawer.Baslik3Activity;
 import example.batuhan.www.navigationdrawer.MainActivity;
 import example.batuhan.www.navigationdrawer.R;
 
@@ -25,14 +24,9 @@ import example.batuhan.www.navigationdrawer.R;
  * create an instance of this fragment.
  */
 public class AnasayfaFragment extends Fragment {
-    ListView list;
-    ListViewAdapter adapter;
-    private String[] haber_baslik;
-    private String[] haber_detay;
 
-    private TypedArray haber_icon;
-    private int[] haber_icon_int;
     Activity titleChange;
+
     public AnasayfaFragment() {
         // Required empty public constructor
     }
@@ -43,49 +37,66 @@ public class AnasayfaFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_anasayfa, container, false);
-        haber_baslik  =getResources().getStringArray(R.array.haber_baslik);
-        haber_detay  =getResources().getStringArray(R.array.haber_detay_array);
-        haber_icon  = getResources().obtainTypedArray(R.array.icon_array);
-        haber_icon_int = new int[haber_icon.length()];
-        for(int i = 0;i<haber_icon.length();i++){
-            haber_icon_int[i] = haber_icon.getResourceId(i, -1);
-        }
-        haber_icon.recycle();
 
+        LinearLayout linearLayout1 = (LinearLayout) rootView.findViewById(R.id.baslik_1_linear_layout);
 
-        list = (ListView) rootView.findViewById(R.id.haberlist);
-
-        adapter = new ListViewAdapter(getContext(), haber_baslik, haber_detay, haber_icon_int);
-
-        list.setAdapter(adapter);
-
-       list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-
+        linearLayout1.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view,
-                                    int position, long id) {
-
-               /* Intent intent=new Intent(getContext(),YonetimFragment.class);
-                startActivity(intent);
-               /* Intent i = new Intent(getActivity(), HaberDetay.class);
-
-                i.putExtra("haber_detay", haber_detay[position]);
-                i.putExtra("image_detay",haber_icon_int[position]);
-
-                getActivity().startActivity(i);*/
+            public void onClick(View v) {
+                goToDetailActivity(1);
             }
+        });
+        LinearLayout linearLayout2 = (LinearLayout) rootView.findViewById(R.id.baslik_2_linear_layout);
 
+        linearLayout2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goToDetailActivity(2);
+            }
+        });
+        LinearLayout linearLayout3 = (LinearLayout) rootView.findViewById(R.id.baslik_3_linear_layout);
+        linearLayout3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goToDetailActivity(3);
+            }
         });
 
-        return  rootView;
+
+        return rootView;
 
 
     }
 
+    private void goToDetailActivity(int i) {
+        switch (i) {
+            case 1:
+
+                Intent intent = new Intent(getActivity(), Baslik1Activity.class);
+                getActivity().startActivity(intent);
+                break;
+
+            case 2:
+                Intent intent2 = new Intent(getActivity(), Baslik2Activity.class);
+                getActivity().startActivity(intent2);
+
+                break;
+            case 3:
+                Intent intent3 = new Intent(getActivity(), Baslik3Activity.class);
+                getActivity().startActivity(intent3);
+
+                break;
+
+
+            default:
+                break;
+        }
+    }
+
     //Activity metodunu fragment içinde kullanmak için attach işlemi yapıyoruz
     @Override
-    public void  onAttach(Activity activity){
+    public void onAttach(Activity activity) {
         super.onAttach(activity);
-        titleChange=(MainActivity) activity;
+        titleChange = (MainActivity) activity;
     }
 }

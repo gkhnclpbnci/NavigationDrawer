@@ -1,14 +1,129 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="pages.AnasayfaFragment">
+    android:layout_height="match_parent">
 
-    <!-- TODO: Update blank fragment layout -->
-    <ListView
-        android:id="@+id/haberlist"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent" />/>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="pages.AnasayfaFragment">
 
 
-</FrameLayout>
+        <LinearLayout
+            android:id="@+id/baslik_1_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/general_image_view_height"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/danismanlik" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:text="Danışmalık Hizmetleri"
+                android:textColor="#37a7db"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:maxLines="4"
+                android:ellipsize="end"
+                android:text="İşiniz ne kadar karmaşık olursa olsun, sahip olduğumuz yetenek ve deneyimimizle sizi ileriye taşıyacak çözümleri sağlıyoruz. Kararlı adımlar atmanıza ve sürdürülebilir sonuçlar elde etmenize yardımcı oluyoruz ..." />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/baslik_2_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/general_image_view_height"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/hizmet" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:text="Yazılım Hizmetleri"
+                android:textColor="#37a7db"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:maxLines="5"
+                android:ellipsize="end"
+                android:text="İş süreçlerini hızlı ve doğru bir şekilde sürdürebilmek isteyen işletmeler ihtiyaçları doğrultusunda yazılımlar kullanmaktadırlar. Bu yazılımlar ERP yazılımları, Ofis yazılımları gibi genel amaçlı yazılımlar olabilirken, Grafik Tasarım Yazılımları ..." />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/baslik_3_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/general_image_view_height"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/yonetim" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:text="İdeaPro Üretim Yönetim Sistemi Yazılımı"
+                android:textColor="#37a7db"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:maxLines="5"
+                android:ellipsize="end"
+                android:text="İdeaPro Üretim Yönetim Sistemi Yazılımı, işletmelerin belirledikleri üretim felsefelerine (Yalın, JIT, vb.) uyumlaştırılabilir bir altyapıda makinelerinin ve ürünlerinin birbirleri ile haberleşebildikleri, uygun maliyetli, ..." />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

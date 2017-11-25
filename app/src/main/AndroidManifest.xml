@@ -12,6 +12,7 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:roundIcon="@drawable/deneme"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -31,7 +32,7 @@
              Note that the API key is linked to the encryption key used to sign the APK.
              You need a different API key for each encryption key, including the release key that is used to
              sign the APK for publishing.
-             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -39,7 +40,19 @@
 
         <activity
             android:name=".MapsActivity"
-            android:label="@string/title_activity_maps"></activity>
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".Baslik1Activity"
+            android:label="@string/title_activity_baslik1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Baslik2Activity"
+            android:label="@string/title_activity_baslik2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Baslik3Activity"
+            android:label="@string/title_activity_baslik3"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

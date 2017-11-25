@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity
 
         supportRequestWindowFeature(Window.FEATURE_ACTION_BAR_OVERLAY);
         //requestWindowFeature(Window.FEATURE_NO_TITLE);
-        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+//        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         setContentView(R.layout.activity_main);
 
@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         expandableList = (ExpandableListView) findViewById(R.id.navigationmenu);
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        final NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
         navigationView.setItemIconTintList(null);
 
@@ -138,15 +138,23 @@ public class MainActivity extends AppCompatActivity
         });
         expandableList.setOnGroupClickListener(new ExpandableListView.OnGroupClickListener() {
             @Override
-            public boolean onGroupClick(ExpandableListView expandableListView, View view, int i, long l) {
+            public boolean onGroupClick(ExpandableListView expandableListView, View view, int groupPosition, long l) {
+                if(String.valueOf(groupPosition).equals( "2" ) || String.valueOf(groupPosition).equals( "3" ) )
+                {
+
+                }
+                else
+                {
+                    displayPage(groupPosition);
+                    mDrawerLayout.closeDrawers();
+                }
 
                 Log.d("DEBUG", "heading clicked");
-                displayPage(i);
                 return false;
             }
         });
 
-
+        displayPage(0);
     }
     private void displayPage(int position) {
 
