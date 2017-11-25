@@ -20,7 +20,9 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_baslik1" />
+    <include
+        layout="@layout/content_baslik1"
+       />
 
 
 
