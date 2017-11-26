@@ -33,6 +33,8 @@ public class B2BFragment extends Fragment {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_b2_b, container, false);
 
+        getActivity().setTitle("");
+
         return rootView;
     }
 

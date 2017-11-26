@@ -26,6 +26,8 @@ public class Baslik1Fragment extends Fragment {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.content_baslik1, container, false);
 
+        getActivity().setTitle("Başlık 1 ");
+
         return rootView;
     }
 

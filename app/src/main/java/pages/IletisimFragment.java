@@ -3,7 +3,9 @@ package pages;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,10 +22,13 @@ import example.batuhan.www.navigationdrawer.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class IletisimFragment extends Fragment implements OnMapReadyCallback {
+public class IletisimFragment extends Fragment {
 
 
     private GoogleMap mMap;
+    private TabLayout tabLayout;
+    private MerkezOfisFragment merkezOfisFragment;
+    private SubeOfisFragment subeOfisFragment;
 
     public IletisimFragment() {
         // Required empty public constructor
@@ -36,27 +41,28 @@ public class IletisimFragment extends Fragment implements OnMapReadyCallback {
         // Inflate the layout for this fragment
         View v= inflater.inflate(R.layout.fragment_iletisim, container, false);
 
+        tabLayout = (TabLayout)v. findViewById(R.id.mainTabLayout);
 
+        ViewPager viewPager = (ViewPager)v. findViewById(R.id.mainViewPager);
+
+        ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(getFragmentManager());
+
+        createFragments(viewPagerAdapter);
+
+        viewPager.setAdapter(viewPagerAdapter);
+
+        tabLayout.setupWithViewPager(viewPager);
 
         return v;
     }
 
-    @Override
-    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-        SupportMapFragment mapFragment = (SupportMapFragment)getChildFragmentManager().findFragmentById(R.id.map);
-        mapFragment.getMapAsync(this);
 
+    private void createFragments(ViewPagerAdapter viewPagerAdapter) {
 
-    }
-
-    @Override
-    public void onMapReady(GoogleMap googleMap) {
-        LatLng sydney = new LatLng(38.366125, 27.207569);
-        googleMap.addMarker(new MarkerOptions().position(sydney)
-                .title("İdeaktif"));
-        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney,15));
-        googleMap.getUiSettings().setZoomControlsEnabled(true);
+        merkezOfisFragment = new MerkezOfisFragment();
+        subeOfisFragment = new SubeOfisFragment();
+        viewPagerAdapter.addFragment(merkezOfisFragment, "Merkez");
+        viewPagerAdapter.addFragment(subeOfisFragment, "Şube");
 
     }
 }
