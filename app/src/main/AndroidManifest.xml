@@ -53,6 +53,8 @@
             android:name=".Baslik3Activity"
             android:label="@string/title_activity_baslik3"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".BaslikBaseActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>

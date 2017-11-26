@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import example.batuhan.www.navigationdrawer.Baslik1Activity;
 import example.batuhan.www.navigationdrawer.MainActivity;
 import example.batuhan.www.navigationdrawer.R;
 
@@ -40,6 +41,6 @@ public class YazilimFragment extends Fragment {
     @Override
     public void  onAttach(Activity activity){
         super.onAttach(activity);
-        titleChange=(MainActivity) activity;
+        titleChange= activity;
     }
 }

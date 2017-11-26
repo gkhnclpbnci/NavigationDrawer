@@ -1,28 +1,21 @@
 package pages;
 
 import android.app.Activity;
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import example.batuhan.www.navigationdrawer.MainActivity;
 import example.batuhan.www.navigationdrawer.R;
 
 /**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link KobiFragment.OnFragmentInteractionListener} interface
- * to handle interaction events.
- * Use the {@link KobiFragment#newInstance} factory method to
- * create an instance of this fragment.
+ * Created by batuhandeprem on 26.11.2017.
  */
-public class KobiFragment extends Fragment {
+
+public class Baslik3Fragment extends Fragment {
     Activity titleChange;
-    public KobiFragment() {
+    public Baslik3Fragment() {
         // Required empty public constructor
     }
 
@@ -31,7 +24,7 @@ public class KobiFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View rootView = inflater.inflate(R.layout.fragment_kobi, container, false);
+        View rootView = inflater.inflate(R.layout.content_baslik3, container, false);
 
         return rootView;
     }

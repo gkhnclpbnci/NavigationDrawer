@@ -1,5 +1,6 @@
 package example.batuhan.www.navigationdrawer;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
@@ -11,11 +12,9 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
-import android.view.WindowManager;
 import android.widget.ExpandableListView;
 import android.widget.Toast;
 
@@ -26,6 +25,9 @@ import java.util.List;
 import pages.AnasayfaFragment;
 import pages.ArgeFragment;
 import pages.B2BFragment;
+import pages.Baslik1Fragment;
+import pages.Baslik2Fragment;
+import pages.Baslik3Fragment;
 import pages.DepoFragment;
 import pages.DonanimFragment;
 import pages.ErpFragment;
@@ -39,64 +41,66 @@ import pages.KurumFragment;
 import pages.YazilimFragment;
 import pages.YonetimFragment;
 
+/**
+ * Created by batuhandeprem on 26.11.2017.
+ */
 
-public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+public class BaslikBaseActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
-    String fragment_name = "";
-
-    View view_Group;
+    private View view_Group;
     private DrawerLayout mDrawerLayout;
-    XpandableListAdapter mMenuAdapter;
-    ExpandableListView expandableList;
-    List<String> listDataHeader;
-    HashMap<String, List<String>> listDataChild;
-    //Icons, use as you want
-    static int[] icon = {R.mipmap.ic_launcher,
-            R.mipmap.ic_launcher,
-            R.mipmap.ic_launcher, R.mipmap.ic_launcher, R.mipmap.ic_launcher, R.mipmap.ic_launcher, R.mipmap.ic_launcher, R.mipmap.ic_launcher, R.mipmap.ic_launcher, R.mipmap.ic_launcher, R.mipmap.ic_launcher, R.mipmap.ic_launcher, R.mipmap.ic_launcher, R.mipmap.ic_launcher, R.mipmap.ic_launcher, R.mipmap.ic_launcher};
-
-    @Override
-    public void onWindowFocusChanged(boolean hasFocus) {
-        super.onWindowFocusChanged(hasFocus);
-        if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.JELLY_BEAN_MR2) {
-            expandableList.setIndicatorBounds(expandableList.getRight() - 80, expandableList.getWidth());
-        } else {
-            expandableList.setIndicatorBoundsRelative(expandableList.getRight() - 80, expandableList.getWidth());
-        }
-
-
-    }
+    private XpandableListAdapter mMenuAdapter;
+    private ExpandableListView expandableList;
+    private List<String> listDataHeader;
+    private HashMap<String, List<String>> listDataChild;
+    private String fragment_name = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         supportRequestWindowFeature(Window.FEATURE_ACTION_BAR_OVERLAY);
-        //requestWindowFeature(Window.FEATURE_NO_TITLE);
-//        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_baslik1);
+
+//        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+//        setSupportActionBar(toolbar);
+
+
+        initNavigationDrawer();
+    }
+
+    @Override
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+        if(android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.JELLY_BEAN_MR2) {
+            expandableList.setIndicatorBounds(expandableList.getRight()- 80, expandableList.getWidth());
+        } else {
+            expandableList.setIndicatorBoundsRelative(expandableList.getRight()- 80, expandableList.getWidth());
+        }
+
+
+    }
+    private void initNavigationDrawer() {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+
+
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.setDrawerListener(toggle);
+                this, mDrawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        mDrawerLayout.addDrawerListener(toggle);
         toggle.syncState();
 
-        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         expandableList = (ExpandableListView) findViewById(R.id.navigationmenu);
 
         final NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
         navigationView.setItemIconTintList(null);
 
-        if (navigationView != null) {
-            setupDrawerContent(navigationView);
-        }
+        setupDrawerContent(navigationView);
+
         prepareListData();
         mMenuAdapter = new XpandableListAdapter(this, listDataHeader, listDataChild);
 
@@ -110,7 +114,7 @@ public class MainActivity extends AppCompatActivity
                                         int groupPosition,
                                         int childPosition, long id) {
                 //Log.d("DEBUG", "submenu item clicked");
-                Toast.makeText(MainActivity.this,
+                Toast.makeText(BaslikBaseActivity.this,
                         "Header: " + String.valueOf(groupPosition) +
                                 "\nItem: " + String.valueOf(childPosition), Toast.LENGTH_SHORT)
                         .show();
@@ -147,74 +151,57 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
-        displayPage(0);
-    }
-
-    private void displayPage(int position) {
-
-        Fragment fragment = null;
-
-        switch (position) {
-            case 0:
-                fragment = new AnasayfaFragment();
-                fragment_name = "AnasayfaFragment";
-                mDrawerLayout.closeDrawers();
-
-                break;
-            case 1:
-                fragment = new HakkimizdaFragment();
-                fragment_name = "HakkimizdaFragment";
-                mDrawerLayout.closeDrawers();
-
-                break;
-            case 2:
-                fragment = new YazilimFragment();
-                fragment_name = "YazilimFragment";
-                break;
-            case 3:
-                fragment = new HakkimizdaFragment();
-                fragment_name = "HakkimizdaFragment";
-                break;
-            case 4:
-                fragment = new YazilimFragment();
-                fragment_name = "YazilimFragment";
-                mDrawerLayout.closeDrawers();
-
-                break;
-            case 5:
-                fragment = new IletisimFragment();
-                fragment_name = "IletisimFragment";
-                mDrawerLayout.closeDrawers();
-
-                break;
-
-            default:
-                break;
-        }
-        if (fragment != null) {
-
-            // Fragment transaction nesnesi ile fragment ekranları arasında geçiş sağlıyor
-            FragmentManager fragmentManager = getSupportFragmentManager();
-            android.support.v4.app.FragmentTransaction transaction = fragmentManager.beginTransaction();
-            transaction.replace(R.id.container, fragment).addToBackStack(fragment_name).commit();
-
-            // Stack te bulunan fragment sayısını alıyor
-            int count = getSupportFragmentManager().getBackStackEntryCount();
-
-            if (count != 0) {
-                // Son fragment alınıyor
-                FragmentManager.BackStackEntry backStackEntry = getSupportFragmentManager().getBackStackEntryAt(count - 1);
-
-                // Son fragment ile seçilen fragment aynı ise eski fragment siliniyor
-                if (backStackEntry.getName().contains(fragment_name)) {
-                    getSupportFragmentManager().popBackStack();
-                }
-            }
-
-        }
+        int baslikIndex =  getIntent().getIntExtra("baslikIndex",-1);
+        displayPage(baslikIndex);
 
     }
 
+    private void setupDrawerContent(NavigationView navigationView) {
+        navigationView.setNavigationItemSelectedListener(
+                new NavigationView.OnNavigationItemSelectedListener() {
+                    @Override
+                    public boolean onNavigationItemSelected(MenuItem menuItem) {
+                        menuItem.setChecked(true);
+                        mDrawerLayout.closeDrawers();
+                        return true;
+                    }
+                });
+    }
+
+    @Override
+    public void onBackPressed() {
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        if (drawer.isDrawerOpen(GravityCompat.START)) {
+            drawer.closeDrawer(GravityCompat.START);
+        } else {
+            super.onBackPressed();
+        }
+    }
+
+    @SuppressWarnings("StatementWithEmptyBody")
+    @Override
+    public boolean onNavigationItemSelected(MenuItem item) {
+        // Handle navigation view item clicks here.
+        int id = item.getItemId();
+
+        /*if (id == R.id.nav_camera) {
+            // Handle the camera action
+        } else if (id == R.id.nav_gallery) {
+
+        } else if (id == R.id.nav_slideshow) {
+
+        } else if (id == R.id.nav_manage) {
+
+        } else if (id == R.id.nav_share) {
+
+        } else if (id == R.id.nav_send) {
+
+        }*/
+
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        drawer.closeDrawer(GravityCompat.START);
+        return true;
+    }
 
     private void displayPage2(int position) {
 
@@ -249,7 +236,8 @@ public class MainActivity extends AppCompatActivity
             default:
                 break;
         }
-        if (fragment != null) {
+
+        if(fragment != null){
 
             // Fragment transaction nesnesi ile fragment ekranları arasında geçiş sağlıyor
             FragmentManager fragmentManager = getSupportFragmentManager();
@@ -259,7 +247,7 @@ public class MainActivity extends AppCompatActivity
             // Stack te bulunan fragment sayısını alıyor
             int count = getSupportFragmentManager().getBackStackEntryCount();
 
-            if (count != 0) {
+            if(count!=0) {
                 // Son fragment alınıyor
                 FragmentManager.BackStackEntry backStackEntry = getSupportFragmentManager().getBackStackEntryAt(count - 1);
 
@@ -303,7 +291,7 @@ public class MainActivity extends AppCompatActivity
             default:
                 break;
         }
-        if (fragment != null) {
+        if(fragment != null){
 
             // Fragment transaction nesnesi ile fragment ekranları arasında geçiş sağlıyor
             FragmentManager fragmentManager = getSupportFragmentManager();
@@ -313,7 +301,7 @@ public class MainActivity extends AppCompatActivity
             // Stack te bulunan fragment sayısını alıyor
             int count = getSupportFragmentManager().getBackStackEntryCount();
 
-            if (count != 0) {
+            if(count!=0) {
                 // Son fragment alınıyor
                 FragmentManager.BackStackEntry backStackEntry = getSupportFragmentManager().getBackStackEntryAt(count - 1);
 
@@ -385,69 +373,87 @@ public class MainActivity extends AppCompatActivity
         listDataChild.put(listDataHeader.get(5), iletisimHeader);
     }
 
-    private void setupDrawerContent(NavigationView navigationView) {
-        navigationView.setNavigationItemSelectedListener(
-                new NavigationView.OnNavigationItemSelectedListener() {
-                    @Override
-                    public boolean onNavigationItemSelected(MenuItem menuItem) {
-                        menuItem.setChecked(true);
-                        mDrawerLayout.closeDrawers();
-                        return true;
-                    }
-                });
-    }
+    private void displayPage(int position) {
 
-    @Override
-    public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
-            drawer.closeDrawer(GravityCompat.START);
-        } else {
-            super.onBackPressed();
+        Fragment fragment = null;
+
+        switch (position) {
+            case 0:
+                fragment = new AnasayfaFragment();
+                fragment_name = "AnasayfaFragment";
+                mDrawerLayout.closeDrawers();
+
+                break;
+            case 1:
+                fragment = new HakkimizdaFragment();
+                fragment_name = "HakkimizdaFragment";
+                mDrawerLayout.closeDrawers();
+
+                break;
+            case 2:
+                fragment = new YazilimFragment();
+                fragment_name = "YazilimFragment";
+                break;
+            case 3:
+                fragment = new HakkimizdaFragment();
+                fragment_name = "HakkimizdaFragment";
+                break;
+            case 4:
+                fragment = new YazilimFragment();
+                fragment_name = "YazilimFragment";
+                mDrawerLayout.closeDrawers();
+
+                break;
+            case 5:
+                fragment = new IletisimFragment();
+                fragment_name = "IletisimFragment";
+                mDrawerLayout.closeDrawers();
+
+                break;
+
+            case 6:
+                fragment = new Baslik1Fragment();
+                fragment_name = "Baslik1Fragment";
+                mDrawerLayout.closeDrawers();
+
+                break;
+            case 7:
+                fragment = new Baslik2Fragment();
+                fragment_name = "Baslik3Fragment";
+                mDrawerLayout.closeDrawers();
+
+                break;
+            case 8:
+                fragment = new Baslik3Fragment();
+                fragment_name = "Baslik3Fragment";
+                mDrawerLayout.closeDrawers();
+
+                break;
+            default:
+                break;
         }
+
+        if(fragment != null){
+
+            // Fragment transaction nesnesi ile fragment ekranları arasında geçiş sağlıyor
+            FragmentManager fragmentManager = getSupportFragmentManager();
+            android.support.v4.app.FragmentTransaction transaction = fragmentManager.beginTransaction();
+            transaction.replace(R.id.container, fragment).addToBackStack(fragment_name).commit();
+
+            // Stack te bulunan fragment sayısını alıyor
+            int count = getSupportFragmentManager().getBackStackEntryCount();
+
+            if(count!=0) {
+                // Son fragment alınıyor
+                FragmentManager.BackStackEntry backStackEntry = getSupportFragmentManager().getBackStackEntryAt(count - 1);
+
+                // Son fragment ile seçilen fragment aynı ise eski fragment siliniyor
+                if (backStackEntry.getName().contains(fragment_name)) {
+                    getSupportFragmentManager().popBackStack();
+                }
+            }
+        }
+
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-
-        return super.onOptionsItemSelected(item);
-    }
-
-    @SuppressWarnings("StatementWithEmptyBody")
-    @Override
-    public boolean onNavigationItemSelected(MenuItem item) {
-        // Handle navigation view item clicks here.
-        int id = item.getItemId();
-
-        /*if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
-        }*/
-
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        drawer.closeDrawer(GravityCompat.START);
-        return true;
-    }
 }

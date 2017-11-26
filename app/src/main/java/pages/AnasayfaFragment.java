@@ -12,6 +12,7 @@ import android.widget.LinearLayout;
 import example.batuhan.www.navigationdrawer.Baslik1Activity;
 import example.batuhan.www.navigationdrawer.Baslik2Activity;
 import example.batuhan.www.navigationdrawer.Baslik3Activity;
+import example.batuhan.www.navigationdrawer.BaslikBaseActivity;
 import example.batuhan.www.navigationdrawer.MainActivity;
 import example.batuhan.www.navigationdrawer.R;
 
@@ -72,17 +73,22 @@ public class AnasayfaFragment extends Fragment {
         switch (i) {
             case 1:
 
-                Intent intent = new Intent(getActivity(), Baslik1Activity.class);
+                Intent intent = new Intent(getActivity(), BaslikBaseActivity.class);
+                intent.putExtra("baslikIndex",6);
                 getActivity().startActivity(intent);
                 break;
 
             case 2:
-                Intent intent2 = new Intent(getActivity(), Baslik2Activity.class);
+                Intent intent2 = new Intent(getActivity(), BaslikBaseActivity.class);
+                intent2.putExtra("baslikIndex",7);
+
                 getActivity().startActivity(intent2);
 
                 break;
             case 3:
-                Intent intent3 = new Intent(getActivity(), Baslik3Activity.class);
+                Intent intent3 = new Intent(getActivity(), BaslikBaseActivity.class);
+                intent3.putExtra("baslikIndex",8);
+
                 getActivity().startActivity(intent3);
 
                 break;
@@ -97,6 +103,6 @@ public class AnasayfaFragment extends Fragment {
     @Override
     public void onAttach(Activity activity) {
         super.onAttach(activity);
-        titleChange = (MainActivity) activity;
+        titleChange = activity;
     }
 }

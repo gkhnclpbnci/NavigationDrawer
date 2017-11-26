@@ -40,6 +40,6 @@ public class HakkimizdaFragment extends Fragment {
     @Override
     public void  onAttach(Activity activity){
         super.onAttach(activity);
-        titleChange=(MainActivity) activity;
+        titleChange= activity;
     }
 }

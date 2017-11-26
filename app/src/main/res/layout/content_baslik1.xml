@@ -126,7 +126,7 @@
                 android:textSize="16sp" />
 
         </LinearLayout>
-    </ScrollView>
 
+    </ScrollView>
 
 </android.support.constraint.ConstraintLayout>
