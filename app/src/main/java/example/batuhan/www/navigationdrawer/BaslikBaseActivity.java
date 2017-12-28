@@ -450,6 +450,7 @@ public class BaslikBaseActivity extends AppCompatActivity implements NavigationV
 
         if (fragment != null) {
 
+
             // Fragment transaction nesnesi ile fragment ekranları arasında geçiş sağlıyor
             FragmentManager fragmentManager = getSupportFragmentManager();
             android.support.v4.app.FragmentTransaction transaction = fragmentManager.beginTransaction();
