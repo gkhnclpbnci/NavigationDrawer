@@ -34,7 +34,7 @@ public class YazilimFragment extends Fragment {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_yazilim, container, false);
 
-        getActivity().setTitle("");
+        getActivity().setTitle("Yazılım Hizmetleri");
 
         return rootView;
     }

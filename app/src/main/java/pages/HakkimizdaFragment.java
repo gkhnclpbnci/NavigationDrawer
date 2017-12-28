@@ -32,6 +32,7 @@ public class HakkimizdaFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_hakkimizda, container, false);
+        getActivity().setTitle("Hakkımızda");
 
         return rootView;
     }

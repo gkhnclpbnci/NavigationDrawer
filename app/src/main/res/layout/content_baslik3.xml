@@ -17,16 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-            <TextView
-                android:textColor="#37a7db"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:inputType="textMultiLine"
-                android:text="İdeaPro Üretim Yönetim Sistemi Yazılımı"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textSize="16sp" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -85,7 +76,7 @@ Bu yazılım ile, işletmelerin üretimdeki verimlilik ve etkinliklerinin arttı
                 android:layout_height="200dp"
                 android:src="@drawable/idepro1" />
             <TextView
-                android:text="Üretim alanındaki malzeme transferleri mobil cihazlar vasıtası ile gerçekleştirilebilmektedir. Aynı zamanda Tablet üzerinden, üretimde kullanılan makinalardaki doluluklar ve işletme kaynakları üzerindeki işler izlenebilmektedir. İşletme talep ettiği taktirde Üretim Sonu Kayıtlarını (Mamul, Yarımamul girişlerini) ve İş Emri kapamalarını mobil / Tablet modülü içerisinden gerçekleştirebilir. Bu modül işletme üretim alanında sabit PC konulamayan bölgelerde ve üretim alanında belirlenmiş koltukaltı ambarlarının bulunduğu yapılarda etkin bir şekilde kullanılmaktad"
+                android:text="Üretim alanındaki malzeme transferleri mobil cihazlar vasıtası ile gerçekleştirilebilmektedir. Aynı zamanda Tablet üzerinden, üretimde kullanılan makinalardaki doluluklar ve işletme kaynakları üzerindeki işler izlenebilmektedir. İşletme talep ettiği taktirde Üretim Sonu Kayıtlarını (Mamul, Yarımamul girişlerini) ve İş Emri kapamalarını mobil / Tablet modülü içerisinden gerçekleştirebilir. Bu modül işletme üretim alanında sabit PC konulamayan bölgelerde ve üretim alanında belirlenmiş koltukaltı ambarlarının bulunduğu yapılarda etkin bir şekilde kullanılmaktadır."
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"

@@ -1,0 +1,268 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+        android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="pages.EkibimizFragment">
+
+
+        <LinearLayout
+            android:id="@+id/baslik_1_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="120dp"
+                android:layout_height="180dp"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/volkan" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:text="VOLKAN KUYUCUOĞLU"
+                android:gravity="center"
+                android:textColor="#37a7db"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:maxLines="4"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:text="İş Geliştirme Danışmanı" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/baslik_2_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="120dp"
+                android:layout_height="180dp"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/anil" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:text="ANIL AYKUTLUĞ"
+                android:gravity="center"
+                android:textColor="#37a7db"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:maxLines="4"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:text="Teknoloji Danışmanı" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/baslik_3_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="120dp"
+                android:layout_height="180dp"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/anil_karahan" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:text="ANIL KARAHAN"
+                android:gravity="center"
+                android:textColor="#37a7db"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:maxLines="4"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:text="ERP Danışmanı" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/baslik_4_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="120dp"
+                android:layout_height="180dp"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/kamuran" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:text="KAMURAN ENGİN"
+                android:gravity="center"
+                android:textColor="#37a7db"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:maxLines="4"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:text="Yazılım Geliştirici - WEB" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/baslik_5_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="120dp"
+                android:layout_height="180dp"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/serhat" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:text="SERHAT SERTTAŞ"
+                android:gravity="center"
+                android:textColor="#37a7db"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:maxLines="4"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:text="Yazılım Geliştirici - WEB" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/baslik_6_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="120dp"
+                android:layout_height="180dp"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/mail" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:text="GÖKHAN CALPBİNİCİ"
+                android:gravity="center"
+                android:textColor="#37a7db"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:maxLines="4"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:text="Yazılım Geliştirici - Mobil" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

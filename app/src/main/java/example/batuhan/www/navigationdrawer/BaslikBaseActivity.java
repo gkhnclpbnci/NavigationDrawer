@@ -1,5 +1,6 @@
 package example.batuhan.www.navigationdrawer;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -9,9 +10,11 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
@@ -30,6 +33,7 @@ import pages.Baslik2Fragment;
 import pages.Baslik3Fragment;
 import pages.DepoFragment;
 import pages.DonanimFragment;
+import pages.EkibimizFragment;
 import pages.ErpFragment;
 import pages.GelistirmeFragment;
 import pages.HakkimizdaFragment;
@@ -40,10 +44,6 @@ import pages.KobiFragment;
 import pages.KurumFragment;
 import pages.YazilimFragment;
 import pages.YonetimFragment;
-
-/**
- * Created by batuhandeprem on 26.11.2017.
- */
 
 public class BaslikBaseActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -324,6 +324,7 @@ public class BaslikBaseActivity extends AppCompatActivity implements NavigationV
         listDataHeader.add("Ürünler");
         listDataHeader.add("Hizmetler");
         listDataHeader.add("Yazılım Hizmetleri");
+        listDataHeader.add("Ekibimiz");
         listDataHeader.add("İletişim");
 
         // Adding child data
@@ -360,6 +361,9 @@ public class BaslikBaseActivity extends AppCompatActivity implements NavigationV
 //        heading5.add("Submenu");
 //        heading5.add("Submenu");
 
+        List<String> ekibimizHeader = new ArrayList<String>();
+
+
         List<String> iletisimHeader = new ArrayList<String>();
 //        heading6.add("Submenu");
 //        heading6.add("Submenu");
@@ -370,7 +374,8 @@ public class BaslikBaseActivity extends AppCompatActivity implements NavigationV
         listDataChild.put(listDataHeader.get(2), urunlerHeader);
         listDataChild.put(listDataHeader.get(3), hizmetlerHeader);
         listDataChild.put(listDataHeader.get(4), yazilimHeader);
-        listDataChild.put(listDataHeader.get(5), iletisimHeader);
+        listDataChild.put(listDataHeader.get(5), ekibimizHeader);
+        listDataChild.put(listDataHeader.get(6), iletisimHeader);
     }
 
     private void displayPage(int position) {
@@ -405,25 +410,31 @@ public class BaslikBaseActivity extends AppCompatActivity implements NavigationV
 
                 break;
             case 5:
+                fragment = new EkibimizFragment();
+                fragment_name = "EkibimizFragment";
+                mDrawerLayout.closeDrawers();
+
+                break;
+            case 6:
                 fragment = new IletisimFragment();
                 fragment_name = "IletisimFragment";
                 mDrawerLayout.closeDrawers();
 
                 break;
 
-            case 6:
+            case 7:
                 fragment = new Baslik1Fragment();
                 fragment_name = "Baslik1Fragment";
                 mDrawerLayout.closeDrawers();
 
                 break;
-            case 7:
+            case 8:
                 fragment = new Baslik2Fragment();
-                fragment_name = "Baslik3Fragment";
+                fragment_name = "Baslik2Fragment";
                 mDrawerLayout.closeDrawers();
 
                 break;
-            case 8:
+            case 9:
                 fragment = new Baslik3Fragment();
                 fragment_name = "Baslik3Fragment";
                 mDrawerLayout.closeDrawers();
@@ -455,5 +466,6 @@ public class BaslikBaseActivity extends AppCompatActivity implements NavigationV
         }
 
     }
+
 
 }

@@ -32,6 +32,8 @@ public class GelistirmeFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_gelistirme, container, false);
+        getActivity().setTitle("İş Geliştirme Danışmanlığı");
+
 
         return rootView;
     }

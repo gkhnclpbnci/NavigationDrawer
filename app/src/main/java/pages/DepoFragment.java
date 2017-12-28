@@ -32,6 +32,7 @@ public class DepoFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_depo, container, false);
+        getActivity().setTitle("Depo Yönetim Sistemi Yazılımı");
 
         return rootView;
     }

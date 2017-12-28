@@ -38,6 +38,8 @@ public class AnasayfaFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_anasayfa, container, false);
+        getActivity().setTitle("Anasayfa");
+
 
         LinearLayout linearLayout1 = (LinearLayout) rootView.findViewById(R.id.baslik_1_linear_layout);
 
@@ -74,20 +76,20 @@ public class AnasayfaFragment extends Fragment {
             case 1:
 
                 Intent intent = new Intent(getActivity(), BaslikBaseActivity.class);
-                intent.putExtra("baslikIndex",6);
+                intent.putExtra("baslikIndex",7);
                 getActivity().startActivity(intent);
                 break;
 
             case 2:
                 Intent intent2 = new Intent(getActivity(), BaslikBaseActivity.class);
-                intent2.putExtra("baslikIndex",7);
+                intent2.putExtra("baslikIndex",8);
 
                 getActivity().startActivity(intent2);
 
                 break;
             case 3:
                 Intent intent3 = new Intent(getActivity(), BaslikBaseActivity.class);
-                intent3.putExtra("baslikIndex",8);
+                intent3.putExtra("baslikIndex",9);
 
                 getActivity().startActivity(intent3);
 
@@ -98,6 +100,7 @@ public class AnasayfaFragment extends Fragment {
                 break;
         }
     }
+
 
     //Activity metodunu fragment içinde kullanmak için attach işlemi yapıyoruz
     @Override

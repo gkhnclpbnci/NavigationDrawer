@@ -33,7 +33,7 @@ public class ArgeFragment extends Fragment {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_arge, container, false);
 
-        getActivity().setTitle("");
+        getActivity().setTitle("Arge ve Bilgi Teknolojileri Danışmanlığı");
 
         return rootView;
     }

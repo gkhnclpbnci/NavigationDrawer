@@ -52,9 +52,37 @@
         <activity
             android:name=".Baslik3Activity"
             android:label="@string/title_activity_baslik3"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BaslikBaseActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EkibimizBaseActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Ekibimiz1Activity"
+            android:label="@string/title_activity_baslik1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Ekibimiz2Activity"
+            android:label="@string/title_activity_ekibimiz2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Ekibimiz3Activity"
+            android:label="@string/title_activity_ekibimiz3"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Ekibimiz4Activity"
+            android:label="@string/title_activity_ekibimiz4"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Ekibimiz5Activity"
+            android:label="@string/title_activity_ekibimiz5"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Ekibimiz6Activity"
+            android:label="@string/title_activity_ekibimiz6"
             android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".BaslikBaseActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>

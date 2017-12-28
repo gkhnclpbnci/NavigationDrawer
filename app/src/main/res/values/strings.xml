@@ -11,6 +11,12 @@
     <string name="title_activity_baslik1">Baslik1Activity</string>
     <string name="title_activity_baslik2">Baslik2Activity</string>
     <string name="title_activity_baslik3">Baslik3Activity</string>
+    <string name="title_activity_ekibimiz1">Ekibimiz1Activity</string>
+    <string name="title_activity_ekibimiz2">Ekibimiz2Activity</string>
+    <string name="title_activity_ekibimiz3">Ekibimiz3Activity</string>
+    <string name="title_activity_ekibimiz4">Ekibimiz4Activity</string>
+    <string name="title_activity_ekibimiz5">Ekibimiz5Activity</string>
+    <string name="title_activity_ekibimiz6">Ekibimiz6Activity</string>
 
 
 </resources>

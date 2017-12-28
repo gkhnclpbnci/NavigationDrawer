@@ -9,9 +9,7 @@ import android.view.ViewGroup;
 
 import example.batuhan.www.navigationdrawer.R;
 
-/**
- * Created by batuhandeprem on 26.11.2017.
- */
+
 
 public class Baslik3Fragment extends Fragment {
     Activity titleChange;
@@ -25,6 +23,8 @@ public class Baslik3Fragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.content_baslik3, container, false);
+        getActivity().setTitle("İdeaPro Üretim Yönetim Sistemi Yazılımı");
+
 
         return rootView;
     }

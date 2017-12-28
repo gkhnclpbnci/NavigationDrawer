@@ -16,9 +16,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 import example.batuhan.www.navigationdrawer.R;
 
-/**
- * Created by batuhandeprem on 26.11.2017.
- */
+
 
 public class MerkezOfisFragment  extends Fragment implements OnMapReadyCallback {
 
@@ -43,7 +41,7 @@ public class MerkezOfisFragment  extends Fragment implements OnMapReadyCallback 
     public void onMapReady(GoogleMap googleMap) {
         LatLng sydney = new LatLng(38.366125, 27.207569);
         googleMap.addMarker(new MarkerOptions().position(sydney)
-                .title("İdeaktif Şube"));
+                .title("İdeaktif"));
         googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 15));
         googleMap.getUiSettings().setZoomControlsEnabled(true);
 

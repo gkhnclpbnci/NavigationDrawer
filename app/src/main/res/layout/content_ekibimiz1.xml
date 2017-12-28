@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="example.batuhan.www.navigationdrawer.Baslik1Activity"
+    tools:showIn="@layout/activity_ekibimiz1">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="120dp"
+                android:layout_height="180dp"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/volkan" />
+
+
+            <TextView
+                android:text="      • Skills &amp; Profession"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:text="      • Verimlilik ve etkinlik ölçme - değerlendirme sisteminin kurulması"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:text="      • Tesis ve Depo verimlilik sisteminin kurulması"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:text="      • Üretimden gerçek zamanlı veri toplama ve analiz sisteminin kurulması"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:text="      • Üretim darboğazlarının belirlenmesi ve is-zaman verimliliğinin arttırılması"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:text="      • Bakım Planlama Sisteminin kurulması"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:text="      • Malzeme Gereksinim Planlama (MPR-1), Üretim Planlama (MRP-2) sistemlerinin kurulması"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:text="      • Maliyet Muhasebesi uygulamalarının işletmelere uyarlanması ve Maliyet Muhasebesi Sisteminin kurulması"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:text="      • Kalite kontrol sisteminin işletmelere uyarlanarak kötü kalite maliyetlerinin azaltılması"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

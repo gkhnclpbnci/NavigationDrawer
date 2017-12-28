@@ -32,6 +32,8 @@ public class DonanimFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_donanim, container, false);
+        getActivity().setTitle("Donanım Ürünleri");
+
 
         return rootView;
     }

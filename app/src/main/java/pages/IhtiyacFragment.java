@@ -33,6 +33,8 @@ public class IhtiyacFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_ihtiyac, container, false);
+        getActivity().setTitle("İhtiyaç Planlama ve Stok Yönetim Danışmanlığı");
+
 
         return rootView;
     }

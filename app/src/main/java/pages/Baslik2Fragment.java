@@ -9,9 +9,6 @@ import android.view.ViewGroup;
 
 import example.batuhan.www.navigationdrawer.R;
 
-/**
- * Created by batuhandeprem on 26.11.2017.
- */
 
 public class Baslik2Fragment extends Fragment {
     Activity titleChange;
@@ -25,6 +22,8 @@ public class Baslik2Fragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.content_baslik2, container, false);
+        getActivity().setTitle("Yazılım Hizmetleri");
+
 
         return rootView;
     }

@@ -36,6 +36,8 @@ public class ErpFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_erp, container, false);
+        getActivity().setTitle("ERP Çözümleri");
+
 
         ImageView imageView =(ImageView) rootView.findViewById(R.id.imageView);
 

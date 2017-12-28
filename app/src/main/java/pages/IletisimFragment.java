@@ -40,6 +40,8 @@ public class IletisimFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v= inflater.inflate(R.layout.fragment_iletisim, container, false);
+        getActivity().setTitle("İletişim");
+
 
         tabLayout = (TabLayout)v. findViewById(R.id.mainTabLayout);
 

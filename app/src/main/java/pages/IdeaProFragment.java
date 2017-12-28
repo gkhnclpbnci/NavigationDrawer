@@ -32,6 +32,7 @@ public class IdeaProFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_idea, container, false);
+        getActivity().setTitle("İdeaPro Üretim Yönetim Sistemi Yazılımı");
 
         return rootView;
     }

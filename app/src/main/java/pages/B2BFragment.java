@@ -32,8 +32,7 @@ public class B2BFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_b2_b, container, false);
-
-        getActivity().setTitle("");
+        getActivity().setTitle("İdeaktif B2B Müşteri Web Portalı Yazılımı");
 
         return rootView;
     }

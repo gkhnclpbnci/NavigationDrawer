@@ -1,5 +1,6 @@
 package example.batuhan.www.navigationdrawer;
 
+import android.content.DialogInterface;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
@@ -8,9 +9,11 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -28,6 +31,7 @@ import pages.ArgeFragment;
 import pages.B2BFragment;
 import pages.DepoFragment;
 import pages.DonanimFragment;
+import pages.EkibimizFragment;
 import pages.ErpFragment;
 import pages.GelistirmeFragment;
 import pages.HakkimizdaFragment;
@@ -110,10 +114,10 @@ public class MainActivity extends AppCompatActivity
                                         int groupPosition,
                                         int childPosition, long id) {
                 //Log.d("DEBUG", "submenu item clicked");
-                Toast.makeText(MainActivity.this,
+             /*   Toast.makeText(MainActivity.this,
                         "Header: " + String.valueOf(groupPosition) +
                                 "\nItem: " + String.valueOf(childPosition), Toast.LENGTH_SHORT)
-                        .show();
+                        .show();*/
                 if (String.valueOf(groupPosition).equals("2")) {
                     displayPage2(childPosition);
 
@@ -182,6 +186,12 @@ public class MainActivity extends AppCompatActivity
 
                 break;
             case 5:
+                fragment = new EkibimizFragment();
+                fragment_name = "EkibimizFragment";
+                mDrawerLayout.closeDrawers();
+
+                break;
+            case 6:
                 fragment = new IletisimFragment();
                 fragment_name = "IletisimFragment";
                 mDrawerLayout.closeDrawers();
@@ -336,6 +346,7 @@ public class MainActivity extends AppCompatActivity
         listDataHeader.add("Ürünler");
         listDataHeader.add("Hizmetler");
         listDataHeader.add("Yazılım Hizmetleri");
+        listDataHeader.add("Ekibimiz");
         listDataHeader.add("İletişim");
 
         // Adding child data
@@ -371,6 +382,8 @@ public class MainActivity extends AppCompatActivity
 //        heading5.add("Submenu");
 //        heading5.add("Submenu");
 //        heading5.add("Submenu");
+        List<String> ekibimizHeader = new ArrayList<String>();
+
 
         List<String> iletisimHeader = new ArrayList<String>();
 //        heading6.add("Submenu");
@@ -382,7 +395,8 @@ public class MainActivity extends AppCompatActivity
         listDataChild.put(listDataHeader.get(2), urunlerHeader);
         listDataChild.put(listDataHeader.get(3), hizmetlerHeader);
         listDataChild.put(listDataHeader.get(4), yazilimHeader);
-        listDataChild.put(listDataHeader.get(5), iletisimHeader);
+        listDataChild.put(listDataHeader.get(5), ekibimizHeader);
+        listDataChild.put(listDataHeader.get(6), iletisimHeader);
     }
 
     private void setupDrawerContent(NavigationView navigationView) {
@@ -449,5 +463,28 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        //geri tuşuna basılma durumunu yakalıyoruz
+        if ((keyCode == KeyEvent.KEYCODE_BACK)) {
+            AlertDialog.Builder alert = new AlertDialog.Builder(MainActivity.this);
+            alert.setTitle("Çıkmak İstediğinizden Eminmisiniz ?");
+            alert.setPositiveButton("Evet", new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface arg0, int arg1) {
+                    //evet seçilmesi durumunda yapılacak işlemler
+                    // finish ile activity'i sonlandırıyoruz.
+                    finish();
+                }
+            });
+            alert.setNegativeButton("Hayır", new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface arg0, int arg1) {
+                    //hayır seçildiginde yapılacak işlemler
+                }
+            });
+
+            alert.show();
+        }
+        return super.onKeyDown(keyCode, event);
     }
 }

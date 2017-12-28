@@ -32,6 +32,8 @@ public class KobiFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_kobi, container, false);
+        getActivity().setTitle("KOBİ Kurum Kültürü Geliştirme Envanteri Yazılımı");
+
 
         return rootView;
     }

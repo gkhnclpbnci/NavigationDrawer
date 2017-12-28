@@ -32,6 +32,8 @@ public class KurumFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_kurum, container, false);
+        getActivity().setTitle("Kurum Kültürü (Örgüt Kültürü) Geliştirme Danışmanlığı");
+
 
         return rootView;
     }

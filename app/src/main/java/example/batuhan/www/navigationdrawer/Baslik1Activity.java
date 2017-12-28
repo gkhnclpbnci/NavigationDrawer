@@ -1,5 +1,6 @@
 package example.batuhan.www.navigationdrawer;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -11,9 +12,11 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
@@ -29,6 +32,7 @@ import pages.ArgeFragment;
 import pages.B2BFragment;
 import pages.DepoFragment;
 import pages.DonanimFragment;
+import pages.EkibimizFragment;
 import pages.ErpFragment;
 import pages.GelistirmeFragment;
 import pages.HakkimizdaFragment;
@@ -280,6 +284,7 @@ public class Baslik1Activity extends AppCompatActivity implements NavigationView
         listDataHeader.add("Ürünler");
         listDataHeader.add("Hizmetler");
         listDataHeader.add("Yazılım Hizmetleri");
+        listDataHeader.add("Ekibimiz");
         listDataHeader.add("İletişim");
 
         // Adding child data
@@ -315,6 +320,8 @@ public class Baslik1Activity extends AppCompatActivity implements NavigationView
 //        heading5.add("Submenu");
 //        heading5.add("Submenu");
 //        heading5.add("Submenu");
+        List<String> ekibimizHeader = new ArrayList<String>();
+
 
         List<String> iletisimHeader = new ArrayList<String>();
 //        heading6.add("Submenu");
@@ -326,7 +333,8 @@ public class Baslik1Activity extends AppCompatActivity implements NavigationView
         listDataChild.put(listDataHeader.get(2), urunlerHeader);
         listDataChild.put(listDataHeader.get(3), hizmetlerHeader);
         listDataChild.put(listDataHeader.get(4), yazilimHeader);
-        listDataChild.put(listDataHeader.get(5), iletisimHeader);
+        listDataChild.put(listDataHeader.get(5), ekibimizHeader);
+        listDataChild.put(listDataHeader.get(6), iletisimHeader);
     }
 
     private void displayPage(int position) {
@@ -361,6 +369,12 @@ public class Baslik1Activity extends AppCompatActivity implements NavigationView
 
                 break;
             case 5:
+                fragment = new EkibimizFragment();
+                fragment_name = "EkibimizFragment";
+                mDrawerLayout.closeDrawers();
+
+                break;
+            case 6:
                 fragment = new IletisimFragment();
                 fragment_name = "IletisimFragment";
                 mDrawerLayout.closeDrawers();
@@ -375,5 +389,6 @@ public class Baslik1Activity extends AppCompatActivity implements NavigationView
         startActivity(intent);
 
     }
+
 
 }

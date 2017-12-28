@@ -16,16 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-            <TextView
-                android:textColor="#37a7db"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:inputType="textMultiLine"
-                android:text="İdeaktif B2B Müşteri Web Portalı Yazılımı"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textSize="16sp" />
+
 
             <ImageView
                 android:id="@+id/imageView"
