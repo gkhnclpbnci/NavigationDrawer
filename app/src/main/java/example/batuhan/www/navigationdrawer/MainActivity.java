@@ -73,6 +73,16 @@ public class MainActivity extends AppCompatActivity
     }
 
     @Override
+    protected void onResume() {
+        super.onResume();
+        if (fragment.isAdded()) {
+
+        } else {
+            onBackPressed();
+        }
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
@@ -155,9 +165,10 @@ public class MainActivity extends AppCompatActivity
         displayPage(0);
     }
 
+    private Fragment fragment = null;
+
     private void displayPage(int position) {
 
-        Fragment fragment = null;
 
         switch (position) {
             case 0:
@@ -229,8 +240,6 @@ public class MainActivity extends AppCompatActivity
 
     private void displayPage2(int position) {
 
-        Fragment fragment = null;
-
         switch (position) {
             case 0:
                 fragment = new IdeaProFragment();
@@ -285,8 +294,6 @@ public class MainActivity extends AppCompatActivity
 
 
     private void displayPage3(int position) {
-
-        Fragment fragment = null;
 
         switch (position) {
             case 0:
@@ -367,14 +374,14 @@ public class MainActivity extends AppCompatActivity
         urunlerHeader.add("İdeaPro Üretim Yönetim Sistemi Yazılımı");
         urunlerHeader.add("İdeaktif B2B Müşteri Web Portalı Yazılımı");
         urunlerHeader.add("Depo Yönetim Sistemi Yazılımı");
-      //  urunlerHeader.add("KOBİ Kurum Kültürü Geliştirme Envanteri Yazılımı");
+        //  urunlerHeader.add("KOBİ Kurum Kültürü Geliştirme Envanteri Yazılımı");
         urunlerHeader.add("ERP Çözümleri");
         urunlerHeader.add("Donanım Ürünleri");
 
 
         List<String> hizmetlerHeader = new ArrayList<String>();
         hizmetlerHeader.add("Üretim Yönetimi Danışmanlığı\n");
-       // hizmetlerHeader.add("İhtiyaç Planlama ve Stok Yönetim Danışmanlığı");
+        // hizmetlerHeader.add("İhtiyaç Planlama ve Stok Yönetim Danışmanlığı");
         hizmetlerHeader.add("Arge ve Bilgi Teknolojileri Danışmanlığı");
         hizmetlerHeader.add("İş Geliştirme Danışmanlığı");
         hizmetlerHeader.add("Kurum Kültürü (Örgüt Kültürü) Geliştirme Danışmanlığı\n");

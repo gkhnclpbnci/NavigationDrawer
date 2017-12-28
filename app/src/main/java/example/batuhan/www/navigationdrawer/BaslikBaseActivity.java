@@ -47,6 +47,7 @@ import pages.YonetimFragment;
 
 public class BaslikBaseActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
+    private static final String TAG = BaslikBaseActivity.class.getSimpleName();
     private View view_Group;
     private DrawerLayout mDrawerLayout;
     private XpandableListAdapter mMenuAdapter;
@@ -72,14 +73,15 @@ public class BaslikBaseActivity extends AppCompatActivity implements NavigationV
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {
         super.onWindowFocusChanged(hasFocus);
-        if(android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.JELLY_BEAN_MR2) {
-            expandableList.setIndicatorBounds(expandableList.getRight()- 80, expandableList.getWidth());
+        if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.JELLY_BEAN_MR2) {
+            expandableList.setIndicatorBounds(expandableList.getRight() - 80, expandableList.getWidth());
         } else {
-            expandableList.setIndicatorBoundsRelative(expandableList.getRight()- 80, expandableList.getWidth());
+            expandableList.setIndicatorBoundsRelative(expandableList.getRight() - 80, expandableList.getWidth());
         }
 
 
     }
+
     private void initNavigationDrawer() {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -151,7 +153,7 @@ public class BaslikBaseActivity extends AppCompatActivity implements NavigationV
             }
         });
 
-        int baslikIndex =  getIntent().getIntExtra("baslikIndex",-1);
+        int baslikIndex = getIntent().getIntExtra("baslikIndex", -1);
         displayPage(baslikIndex);
 
     }
@@ -170,6 +172,11 @@ public class BaslikBaseActivity extends AppCompatActivity implements NavigationV
 
     @Override
     public void onBackPressed() {
+        Log.d(TAG, "onBackPressed: ");
+        if (fragment != null && fragment.isAdded()) {
+            Log.i(TAG, "onBackPressed: fragment is not added");
+            finish();
+        }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
@@ -203,9 +210,10 @@ public class BaslikBaseActivity extends AppCompatActivity implements NavigationV
         return true;
     }
 
-    private void displayPage2(int position) {
+    private Fragment fragment = null;
 
-        Fragment fragment = null;
+
+    private void displayPage2(int position) {
 
         switch (position) {
             case 0:
@@ -237,7 +245,7 @@ public class BaslikBaseActivity extends AppCompatActivity implements NavigationV
                 break;
         }
 
-        if(fragment != null){
+        if (fragment != null) {
 
             // Fragment transaction nesnesi ile fragment ekranları arasında geçiş sağlıyor
             FragmentManager fragmentManager = getSupportFragmentManager();
@@ -247,7 +255,7 @@ public class BaslikBaseActivity extends AppCompatActivity implements NavigationV
             // Stack te bulunan fragment sayısını alıyor
             int count = getSupportFragmentManager().getBackStackEntryCount();
 
-            if(count!=0) {
+            if (count != 0) {
                 // Son fragment alınıyor
                 FragmentManager.BackStackEntry backStackEntry = getSupportFragmentManager().getBackStackEntryAt(count - 1);
 
@@ -262,8 +270,6 @@ public class BaslikBaseActivity extends AppCompatActivity implements NavigationV
 
 
     private void displayPage3(int position) {
-
-        Fragment fragment = null;
 
         switch (position) {
             case 0:
@@ -291,7 +297,7 @@ public class BaslikBaseActivity extends AppCompatActivity implements NavigationV
             default:
                 break;
         }
-        if(fragment != null){
+        if (fragment != null) {
 
             // Fragment transaction nesnesi ile fragment ekranları arasında geçiş sağlıyor
             FragmentManager fragmentManager = getSupportFragmentManager();
@@ -301,7 +307,7 @@ public class BaslikBaseActivity extends AppCompatActivity implements NavigationV
             // Stack te bulunan fragment sayısını alıyor
             int count = getSupportFragmentManager().getBackStackEntryCount();
 
-            if(count!=0) {
+            if (count != 0) {
                 // Son fragment alınıyor
                 FragmentManager.BackStackEntry backStackEntry = getSupportFragmentManager().getBackStackEntryAt(count - 1);
 
@@ -344,14 +350,14 @@ public class BaslikBaseActivity extends AppCompatActivity implements NavigationV
         urunlerHeader.add("İdeaPro Üretim Yönetim Sistemi Yazılımı");
         urunlerHeader.add("İdeaktif B2B Müşteri Web Portalı Yazılımı");
         urunlerHeader.add("Depo Yönetim Sistemi Yazılımı");
-      //  urunlerHeader.add("KOBİ Kurum Kültürü Geliştirme Envanteri Yazılımı");
+        //  urunlerHeader.add("KOBİ Kurum Kültürü Geliştirme Envanteri Yazılımı");
         urunlerHeader.add("ERP Çözümleri");
         urunlerHeader.add("Donanım Ürünleri");
 
 
         List<String> hizmetlerHeader = new ArrayList<String>();
         hizmetlerHeader.add("Üretim Yönetimi Danışmanlığı\n");
-       // hizmetlerHeader.add("İhtiyaç Planlama ve Stok Yönetim Danışmanlığı");
+        // hizmetlerHeader.add("İhtiyaç Planlama ve Stok Yönetim Danışmanlığı");
         hizmetlerHeader.add("Arge ve Bilgi Teknolojileri Danışmanlığı");
         hizmetlerHeader.add("İş Geliştirme Danışmanlığı");
         hizmetlerHeader.add("Kurum Kültürü (Örgüt Kültürü) Geliştirme Danışmanlığı\n");
@@ -379,8 +385,6 @@ public class BaslikBaseActivity extends AppCompatActivity implements NavigationV
     }
 
     private void displayPage(int position) {
-
-        Fragment fragment = null;
 
         switch (position) {
             case 0:
@@ -444,7 +448,7 @@ public class BaslikBaseActivity extends AppCompatActivity implements NavigationV
                 break;
         }
 
-        if(fragment != null){
+        if (fragment != null) {
 
             // Fragment transaction nesnesi ile fragment ekranları arasında geçiş sağlıyor
             FragmentManager fragmentManager = getSupportFragmentManager();
@@ -454,7 +458,7 @@ public class BaslikBaseActivity extends AppCompatActivity implements NavigationV
             // Stack te bulunan fragment sayısını alıyor
             int count = getSupportFragmentManager().getBackStackEntryCount();
 
-            if(count!=0) {
+            if (count != 0) {
                 // Son fragment alınıyor
                 FragmentManager.BackStackEntry backStackEntry = getSupportFragmentManager().getBackStackEntryAt(count - 1);
 
