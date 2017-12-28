@@ -19,90 +19,115 @@
                 android:id="@+id/imageView"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:scaleType="centerCrop"
                 android:fitsSystemWindows="true"
-                 />
+                android:scaleType="centerCrop" />
 
 
             <TextView
-               android:text="Günümüzde, işletmelerin sürdürülebilir rekabet avantajı sağlamak için teknolojik altyapılarını her geçen gün gelişen teknolojiye uygun hale getirmeleri önemli bir ihtiyaç haline gelmiştir. Ancak iş uygulamalarının (veya ERP Ürünlerinin) fayda maliyet analizleri incelendiğinde, birçok ERP projesinin maliyetine oranla istenilen faydayı gerçekleştirmemesi de üzücü bir gerçek olarak karşımıza çıkmaktadır. IT Global sektördeki diğer firmalardan farklı olarak, teknoloji ve ERP uygulamalarında uzmanlığının ötesinde, işletme yönetimi, üretim, pazarlama ve finansman konularındaki uzman ekibi ile işletmelerin ihtiyaçlarını ve isteklerini net bir şekilde anlayarak, ERP süreçlerinin işletmelerin hedefleri doğrultusunda ve tam uyum prensibi ile uygulanmasını sağlamaktadır. ERP çözümünün getireceği faydalar şunlardır;"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
+                android:layout_margin="@dimen/satir_basi"
                 android:inputType="textMultiLine"
+                android:text="\t\t Günümüzde, işletmelerin sürdürülebilir rekabet avantajı sağlamak için teknolojik altyapılarını her geçen gün gelişen teknolojiye uygun hale getirmeleri önemli bir ihtiyaç haline gelmiştir. Ancak iş uygulamalarının (veya ERP Ürünlerinin) fayda maliyet analizleri incelendiğinde, birçok ERP projesinin maliyetine oranla istenilen faydayı gerçekleştirmemesi de üzücü bir gerçek olarak karşımıza çıkmaktadır. IT Global sektördeki diğer firmalardan farklı olarak, teknoloji ve ERP uygulamalarında uzmanlığının ötesinde, işletme yönetimi, üretim, pazarlama ve finansman konularındaki uzman ekibi ile işletmelerin ihtiyaçlarını ve isteklerini net bir şekilde anlayarak, ERP süreçlerinin işletmelerin hedefleri doğrultusunda ve tam uyum prensibi ile uygulanmasını sağlamaktadır. ERP çözümünün getireceği faydalar şunlardır;"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textSize="16sp" />
+
             <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/satir_basi"
                 android:text="      • ERP ürünlerinden maksimum faydayı sağlamak"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textSize="16sp" />
-            <TextView
+                android:layout_margin="@dimen/satir_basi"
                 android:text="      • ERP fonksiyonlarının, işletme ihtiyaçları doğrultusunda uyarlanması"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textSize="16sp" />
-            <TextView
+                android:layout_margin="@dimen/satir_basi"
+
                 android:text="      • Etkin ve anlaşılır raporlamalar"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textSize="16sp" />
-            <TextView
+
+                android:layout_margin="@dimen/satir_basi"
                 android:text="      • Kolay kullanımın sağlanması"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textSize="16sp" />
-            <TextView
+                android:layout_margin="@dimen/satir_basi"
                 android:text="      • ERP ürünlerinden maksimum faydayı sağlamakÇalışanların iş süreçlerinin kolaylaştırılması"
+
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textSize="16sp" />
-            <TextView
+                android:layout_margin="@dimen/satir_basi"
                 android:text="      • Karmaşık süreçler yerine basit, anlaşılır ve esnek süreç tasarımı"
+
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textSize="16sp" />
-            <TextView
+                android:layout_margin="@dimen/satir_basi"
+
                 android:text="      • Bilgilendirme sistemleri doğrultusunda, risk gerçekleştiği anda yönetici bilgilendirmelerinin yapılması"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textSize="16sp" />
-            <TextView
+
+                android:layout_margin="@dimen/satir_basi"
                 android:text="      • Tam entegre BT ve ERP altyapısının kurgulanması"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textSize="16sp" />
+
             <TextView
-                android:text="      • ERP Süreçlerinde objektif ve güvenilir analizlerin gerçekleştirilmesİ"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
+                android:layout_margin="@dimen/satir_basi"
+                android:text="      • ERP Süreçlerinde objektif ve güvenilir analizlerin gerçekleştirilmesİ"
+
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textSize="16sp" />
 

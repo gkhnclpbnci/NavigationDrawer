@@ -20,12 +20,15 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
+                android:layout_margin="@dimen/satir_basi"
                 android:inputType="textMultiLine"
-                android:text="İdeaPro Üretim Yönetim Sistemi Yazılımı Endüstri 4.0 özelliklerini de içerisinde barındıran, Bilim Sanayi ve Teknoloji Bakanlığından 044627 BSTB Kodu ile onaylanmış prediktif raporlama özellikleri olan bir yazılımdır.
+                android:text="\t\t İdeaPro Üretim Yönetim Sistemi Yazılımı Endüstri 4.0 özelliklerini de içerisinde barındıran, Bilim Sanayi ve Teknoloji Bakanlığından 044627 BSTB Kodu ile onaylanmış prediktif raporlama özellikleri olan bir yazılımdır.
 İdeaPro Üretim Yönetim Sistemi Yazılımı, işletmelerin belirledikleri üretim felsefelerine (Yalın, JIT, vb.) uyumlaştırılabilir bir altyapıda makinelerinin ve ürünlerinin birbirleri ile haberleşebildikleri, uygun maliyetli, içeriğindeki sensörler ve prediktif yazılım özellikleri sayesinde üretimden gerçek zamanlı veri toplayabilen ve analiz ederek kullanıcılara öneriler sunabilen bir sistemdir.
-Bu yazılım ile, işletmelerin üretimdeki verimlilik ve etkinliklerinin arttırılması, maliyetlerin (zaman, fire, hurda, bakım, duruş) azaltılması sağlanır ve geriye yönelik işletme performansı ölçülebilir."
+
+\t\t Bu yazılım ile, işletmelerin üretimdeki verimlilik ve etkinliklerinin arttırılması, maliyetlerin (zaman, fire, hurda, bakım, duruş) azaltılması sağlanır ve geriye yönelik işletme performansı ölçülebilir."
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:layout_marginTop="15dp"
                 android:textSize="16sp" />
@@ -35,6 +38,7 @@ Bu yazılım ile, işletmelerin üretimdeki verimlilik ve etkinliklerinin arttı
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
                 android:layout_centerVertical="true"
                 android:inputType="textMultiLine"
                 android:textAppearance="?android:attr/textAppearanceLarge"
@@ -42,7 +46,8 @@ Bu yazılım ile, işletmelerin üretimdeki verimlilik ve etkinliklerinin arttı
                 android:textSize="16sp"/>
             <TextView
                 android:textColor="#565151"
-                android:text="İdeaPro Üretim Yönetim Sistemi Yazılımı Ana Modül"
+                android:text="\tİdeaPro Üretim Yönetim Sistemi Yazılımı Ana Modül"
+                android:gravity="center_horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
@@ -57,7 +62,9 @@ Bu yazılım ile, işletmelerin üretimdeki verimlilik ve etkinliklerinin arttı
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
                 android:inputType="textMultiLine"
-                android:text="Ana Modül içerisinde, üretim tezgahlarına iş emirlerinin atanması, üretim kaynaklarının (Makine, personel, zaman) ölçümleri yapılabilmektedir. Altyapı desteklediği durumda, iş başlama ve duruşları sensörler ile belirlenmekte, Altyapının yetersiz olduğu durumlarda ise kullanıcılar başlama, bitiş ve duruşları üretim alanına konulan endüstriyel PC’ler vasıtası ile sisteme girebilmektedirler. Girişi yapılan veriler doğrultusunda bilgilendirmeler, istenilen yöneticilere e-posta ve / veya SMS ile yapılabilmektedir."
+                android:layout_margin="@dimen/satir_basi"
+
+                android:text="\t\t Ana Modül içerisinde, üretim tezgahlarına iş emirlerinin atanması, üretim kaynaklarının (Makine, personel, zaman) ölçümleri yapılabilmektedir. Altyapı desteklediği durumda, iş başlama ve duruşları sensörler ile belirlenmekte, Altyapının yetersiz olduğu durumlarda ise kullanıcılar başlama, bitiş ve duruşları üretim alanına konulan endüstriyel PC’ler vasıtası ile sisteme girebilmektedirler. Girişi yapılan veriler doğrultusunda bilgilendirmeler, istenilen yöneticilere e-posta ve / veya SMS ile yapılabilmektedir."
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textSize="16sp" />
             <TextView

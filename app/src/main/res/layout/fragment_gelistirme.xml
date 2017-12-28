@@ -26,83 +26,103 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
+                android:layout_margin="@dimen/satir_basi"
                 android:inputType="textMultiLine"
-                android:text="“İş Geliştirme” kavramı kurumsallık ve ya gelişim yolcuğunda işletmelerin yanında bulundurması gereken en faydalı araç olmasına rağmen, kavramın ülkemizde tam olarak yerini bulamaması, “her şeyi tek başına bilen iş geliştirme danışmanlarının fazlalığı” ve bu etkenlere bağlı olarak başarısız projelerin “İş Geliştirme Danışmanlığına” yükledikleri olumsuzluk neticesinde işletmeler tarafından çekinilerek yaklaşılan bir olgudur."
+                android:text="“\t\t İş Geliştirme” kavramı kurumsallık ve ya gelişim yolcuğunda işletmelerin yanında bulundurması gereken en faydalı araç olmasına rağmen, kavramın ülkemizde tam olarak yerini bulamaması, “her şeyi tek başına bilen iş geliştirme danışmanlarının fazlalığı” ve bu etkenlere bağlı olarak başarısız projelerin “İş Geliştirme Danışmanlığına” yükledikleri olumsuzluk neticesinde işletmeler tarafından çekinilerek yaklaşılan bir olgudur."
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textSize="16sp" />
+
             <TextView
-                android:text="En küçüğünden, orta düzey veya büyüğüne tüm işletmelerin bazı “olmazsa olmazları” vardır. Örneğin en küçük işletme dahi satış yapamaz ise yaşayamazken işletmeler büyüdükçe bu süreçlere muhasebe, finansman, pazarlama, üretim veya ticaret, müşteri ilişkileri, bilgi işlem vb. süreçler eklenir. Bu süreçleri işletmek üzere kişiler görevlendirilir ve işletme büyüdükçe tek kişiden oluşan bu birimler departmanlara dönüşür. Bu dönüşüm ve gelişim içerisinde en büyük risk, gelişimin rehaveti ile değişimi yönetememek, işletme körlüğüne düşmek ve departmanların strateji ve hedef bütünlüğünü sağlayamamaktır."
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_margin="@dimen/satir_basi"
                 android:layout_marginTop="15dp"
+                android:text="\t\t En küçüğünden, orta düzey veya büyüğüne tüm işletmelerin bazı “olmazsa olmazları” vardır. Örneğin en küçük işletme dahi satış yapamaz ise yaşayamazken işletmeler büyüdükçe bu süreçlere muhasebe, finansman, pazarlama, üretim veya ticaret, müşteri ilişkileri, bilgi işlem vb. süreçler eklenir. Bu süreçleri işletmek üzere kişiler görevlendirilir ve işletme büyüdükçe tek kişiden oluşan bu birimler departmanlara dönüşür. Bu dönüşüm ve gelişim içerisinde en büyük risk, gelişimin rehaveti ile değişimi yönetememek, işletme körlüğüne düşmek ve departmanların strateji ve hedef bütünlüğünü sağlayamamaktır."
+                android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textSize="16sp" />
+
             <TextView
-                android:text="İş Geliştirme en kısa tanımı ile “Bir işletme için müşterilerinden, pazarı ve ilişkilerinden, uzun dönemli değer yaratılmasıdır.” Başka bir ifade ile İş Geliştirme, işletmenin müşterilerini, pazarını ve ticari ilişkilerini inceleyerek, işletmenin ürün ve hizmetlerinin satış hacmini arttırmak, yeni pazarlar oluşturmak var olan pazardaki payını arttırmak vb. gibi stratejik fırsatlar yaratmak ve yaratılması için gerekli altyapının oluşturulmasını sağlamaktır."
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_margin="@dimen/satir_basi"
                 android:layout_marginTop="15dp"
+                android:text="\t\t İş Geliştirme en kısa tanımı ile “Bir işletme için müşterilerinden, pazarı ve ilişkilerinden, uzun dönemli değer yaratılmasıdır.” Başka bir ifade ile İş Geliştirme, işletmenin müşterilerini, pazarını ve ticari ilişkilerini inceleyerek, işletmenin ürün ve hizmetlerinin satış hacmini arttırmak, yeni pazarlar oluşturmak var olan pazardaki payını arttırmak vb. gibi stratejik fırsatlar yaratmak ve yaratılması için gerekli altyapının oluşturulmasını sağlamaktır."
+                android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textSize="16sp" />
+
             <TextView
-                android:text="İşletmelerin “İş Geliştirme” alanında alacakları danışmanlıklar, hedeflerine ulaşmalarını hızlandıracak ve gelişim süreçlerindeki riskleri azaltacaktır. IT Global olarak müşterilerime sunduğumuz iş geliştirme danışmanlığı kapsamında, farklı ve çoklu uzmanlıklara sahip ekibimiz ve iş ortaklarımız ile müşterilerimizin yukarıda bahsedilen süreçlerinde ihtiyaç duydukları ürün ve hizmetleri tek ve güvenilir bir platform üzerinden sunmaktayız. İş geliştirme danışmanlığının sağlayacağı faydalar;"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_margin="@dimen/satir_basi"
                 android:layout_marginTop="15dp"
+                android:text="\t\t İşletmelerin “İş Geliştirme” alanında alacakları danışmanlıklar, hedeflerine ulaşmalarını hızlandıracak ve gelişim süreçlerindeki riskleri azaltacaktır. IT Global olarak müşterilerime sunduğumuz iş geliştirme danışmanlığı kapsamında, farklı ve çoklu uzmanlıklara sahip ekibimiz ve iş ortaklarımız ile müşterilerimizin yukarıda bahsedilen süreçlerinde ihtiyaç duydukları ürün ve hizmetleri tek ve güvenilir bir platform üzerinden sunmaktayız. İş geliştirme danışmanlığının sağlayacağı faydalar;"
+                android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textSize="16sp" />
+
             <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/satir_basi"
                 android:text="      • Tüm süreçler için tek bir platform üzerinden hizmet sunumu"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textSize="16sp" />
-            <TextView
+                android:layout_margin="@dimen/satir_basi"
+
                 android:text="      • İşletme dışı uzmanlar tarafından objektif değerlendirmeler"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textSize="16sp" />
-            <TextView
+                android:layout_margin="@dimen/satir_basi"
                 android:text="      • Bilişim altyapısının kurulması ile ölçülebilir ve yönetilebilir süreçler"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textSize="16sp" />
-            <TextView
+                android:layout_margin="@dimen/satir_basi"
                 android:text="      • Orta ve Uzun vadeli hedeflerin modüler parçalara bölünmesi ile hızlı ve etkinliği ölçülebilir sonuçlar"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textSize="16sp" />
-            <TextView
+                android:layout_margin="@dimen/satir_basi"
                 android:text="      • Yetkinliği belgelenmiş danışmanlardan güvenilir hizmet alımı"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textSize="16sp" />
+
             <TextView
-                android:text="      • Tam Entegre yönetimin oluşturulması"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
+                android:layout_margin="@dimen/satir_basi"
+                android:text="      • Tam Entegre yönetimin oluşturulması"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textSize="16sp" />
 

@@ -19,82 +19,95 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
+                android:layout_margin="@dimen/satir_basi"
+                android:layout_marginTop="15dp"
                 android:inputType="textMultiLine"
-                android:text="İdeaPro Üretim Yönetim Sistemi Yazılımı Endüstri 4.0 özelliklerini de içerisinde barındıran, Bilim Sanayi ve Teknoloji Bakanlığından 044627 BSTB Kodu ile onaylanmış prediktif raporlama özellikleri olan bir yazılımdır.
+                android:text="\t\t İdeaPro Üretim Yönetim Sistemi Yazılımı Endüstri 4.0 özelliklerini de içerisinde barındıran, Bilim Sanayi ve Teknoloji Bakanlığından 044627 BSTB Kodu ile onaylanmış prediktif raporlama özellikleri olan bir yazılımdır.
 İdeaPro Üretim Yönetim Sistemi Yazılımı, işletmelerin belirledikleri üretim felsefelerine (Yalın, JIT, vb.) uyumlaştırılabilir bir altyapıda makinelerinin ve ürünlerinin birbirleri ile haberleşebildikleri, uygun maliyetli, içeriğindeki sensörler ve prediktif yazılım özellikleri sayesinde üretimden gerçek zamanlı veri toplayabilen ve analiz ederek kullanıcılara öneriler sunabilen bir sistemdir.
 Bu yazılım ile, işletmelerin üretimdeki verimlilik ve etkinliklerinin arttırılması, maliyetlerin (zaman, fire, hurda, bakım, duruş) azaltılması sağlanır ve geriye yönelik işletme performansı ölçülebilir."
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:layout_marginTop="15dp"
                 android:textSize="16sp" />
-            <TextView
-                android:textColor="#37a7db"
-                android:text="İdeaPro Üretim Yönetim Sistemi Modülleri"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:inputType="textMultiLine"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:layout_marginTop="15dp"
-                android:textSize="16sp"/>
-            <TextView
-                android:textColor="#565151"
-                android:text="İdeaPro Üretim Yönetim Sistemi Yazılımı Ana Modül"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:inputType="textMultiLine"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textSize="16sp"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
+                android:layout_margin="@dimen/satir_basi"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
                 android:inputType="textMultiLine"
-                android:text="Ana Modül içerisinde, üretim tezgahlarına iş emirlerinin atanması, üretim kaynaklarının (Makine, personel, zaman) ölçümleri yapılabilmektedir. Altyapı desteklediği durumda, iş başlama ve duruşları sensörler ile belirlenmekte, Altyapının yetersiz olduğu durumlarda ise kullanıcılar başlama, bitiş ve duruşları üretim alanına konulan endüstriyel PC’ler vasıtası ile sisteme girebilmektedirler. Girişi yapılan veriler doğrultusunda bilgilendirmeler, istenilen yöneticilere e-posta ve / veya SMS ile yapılabilmektedir."
+                android:text="İdeaPro Üretim Yönetim Sistemi Modülleri"
                 android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#37a7db"
                 android:textSize="16sp" />
+
             <TextView
-                android:textColor="#565151"
-                android:text="İdeaPro Üretim Yönetim Sistemi Yazılımı Mobil / Tablet Modülü"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
+                android:gravity="center_horizontal"
                 android:inputType="textMultiLine"
+                android:text="İdeaPro Üretim Yönetim Sistemi Yazılımı Ana Modül"
                 android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#565151"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/satir_basi"
+                android:inputType="textMultiLine"
+                android:text="\t\t Ana Modül içerisinde, üretim tezgahlarına iş emirlerinin atanması, üretim kaynaklarının (Makine, personel, zaman) ölçümleri yapılabilmektedir. Altyapı desteklediği durumda, iş başlama ve duruşları sensörler ile belirlenmekte, Altyapının yetersiz olduğu durumlarda ise kullanıcılar başlama, bitiş ve duruşları üretim alanına konulan endüstriyel PC’ler vasıtası ile sisteme girebilmektedirler. Girişi yapılan veriler doğrultusunda bilgilendirmeler, istenilen yöneticilere e-posta ve / veya SMS ile yapılabilmektedir."
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
                 android:layout_marginTop="15dp"
-                android:textSize="16sp"/>
+                android:gravity="center_horizontal"
+                android:inputType="textMultiLine"
+                android:text="İdeaPro Üretim Yönetim Sistemi Yazılımı Mobil / Tablet Modülü"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#565151"
+                android:textSize="16sp" />
 
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:src="@drawable/idepro1" />
-            <TextView
-                android:text="Üretim alanındaki malzeme transferleri mobil cihazlar vasıtası ile gerçekleştirilebilmektedir. Aynı zamanda Tablet üzerinden, üretimde kullanılan makinalardaki doluluklar ve işletme kaynakları üzerindeki işler izlenebilmektedir. İşletme talep ettiği taktirde Üretim Sonu Kayıtlarını (Mamul, Yarımamul girişlerini) ve İş Emri kapamalarını mobil / Tablet modülü içerisinden gerçekleştirebilir. Bu modül işletme üretim alanında sabit PC konulamayan bölgelerde ve üretim alanında belirlenmiş koltukaltı ambarlarının bulunduğu yapılarda etkin bir şekilde kullanılmaktadır."
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:inputType="textMultiLine"
-                android:textSize="16sp"
-                android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:textColor="#565151"
-                android:text="İdeaPro Üretim Yönetim Sistemi Yazılımı Veri Aktarım Modülü"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
+                android:layout_margin="@dimen/satir_basi"
                 android:inputType="textMultiLine"
+                android:text="\t\t Üretim alanındaki malzeme transferleri mobil cihazlar vasıtası ile gerçekleştirilebilmektedir. Aynı zamanda Tablet üzerinden, üretimde kullanılan makinalardaki doluluklar ve işletme kaynakları üzerindeki işler izlenebilmektedir. İşletme talep ettiği taktirde Üretim Sonu Kayıtlarını (Mamul, Yarımamul girişlerini) ve İş Emri kapamalarını mobil / Tablet modülü içerisinden gerçekleştirebilir. Bu modül işletme üretim alanında sabit PC konulamayan bölgelerde ve üretim alanında belirlenmiş koltukaltı ambarlarının bulunduğu yapılarda etkin bir şekilde kullanılmaktadır."
                 android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
                 android:layout_marginTop="15dp"
-                android:textSize="16sp"/>
+                android:gravity="center_horizontal"
+                android:inputType="textMultiLine"
+                android:text="İdeaPro Üretim Yönetim Sistemi Yazılımı Veri Aktarım Modülü"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#565151"
+                android:textSize="16sp" />
+
             <ImageView
                 android:id="@+id/imageView1"
                 android:layout_width="match_parent"
@@ -102,39 +115,46 @@ Bu yazılım ile, işletmelerin üretimdeki verimlilik ve etkinliklerinin arttı
                 android:src="@drawable/idepro3" />
 
             <TextView
-                android:text="Veri aktarım modülü birden fazla iş istasyonunun bulunduğu yapılarda ve / veya sensörlerden veri okumanın gerçekleştirileceği ortamlar için gerekli olan bir modüldür. Bu modül sayesinde üretim alanındaki cihazlardan toplanan veriler tek bir veritabanı içerisinde toplanarak, geleneksel ve prediktif raporlamaya veri havuzu oluşturulur."
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
+                android:layout_margin="@dimen/satir_basi"
                 android:inputType="textMultiLine"
-                android:textSize="16sp"
-                android:textAppearance="?android:attr/textAppearanceLarge" />
+                android:text="\t\t Veri aktarım modülü birden fazla iş istasyonunun bulunduğu yapılarda ve / veya sensörlerden veri okumanın gerçekleştirileceği ortamlar için gerekli olan bir modüldür. Bu modül sayesinde üretim alanındaki cihazlardan toplanan veriler tek bir veritabanı içerisinde toplanarak, geleneksel ve prediktif raporlamaya veri havuzu oluşturulur."
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+
             <TextView
-                android:text="İdeaPro Üretim Yönetim Sistemi Yazılımı ERP Entegrasyon Modül"
-                android:textColor="#565151"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                android:inputType="textMultiLine"
-                android:textSize="16sp"
                 android:layout_marginTop="15dp"
-                android:textAppearance="?android:attr/textAppearanceLarge" />
+                android:gravity="center_horizontal"
+                android:inputType="textMultiLine"
+                android:text="İdeaPro Üretim Yönetim Sistemi Yazılımı ERP Entegrasyon Modül"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#565151"
+                android:textSize="16sp" />
+
             <ImageView
                 android:id="@+id/imageView2"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:src="@drawable/idepro2"/>
+                android:src="@drawable/idepro2" />
+
             <TextView
-                android:text="Bu modül ile İdeapro veri havuzunda biriken üretim verilerin (İş Emirleri, Üretim operasyon kayıtları, Personel ve Makine süreleri, vb.) işletmenin kullandığı ERP sistemine entegrasyonu sağlanır. Entegrasyon modülü Netsis ERP ürünleri ile tam entegre çalışmakta olup, diğer ERP yazılımları ile web servisler aracılığı ile veri aktarımları gerçekleştirilmektedir."
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
+
                 android:layout_centerVertical="true"
+                android:layout_margin="@dimen/satir_basi"
                 android:inputType="textMultiLine"
-                android:textSize="16sp"
-                android:textAppearance="?android:attr/textAppearanceLarge" />
+                android:text="\t\t Bu modül ile İdeapro veri havuzunda biriken üretim verilerin (İş Emirleri, Üretim operasyon kayıtları, Personel ve Makine süreleri, vb.) işletmenin kullandığı ERP sistemine entegrasyonu sağlanır. Entegrasyon modülü Netsis ERP ürünleri ile tam entegre çalışmakta olup, diğer ERP yazılımları ile web servisler aracılığı ile veri aktarımları gerçekleştirilmektedir."
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
         </LinearLayout>
     </ScrollView>
 

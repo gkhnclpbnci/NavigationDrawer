@@ -23,181 +23,220 @@
 
 
             <TextView
-                android:text="Depo Yönetim Sistemi Yazılımı, İşletme içerisindeki malzeme ve mal hareketliliğini sistematik ve doğru bir şekilde yapılmasını sağlayan ve ERP sistemine anlık veri akışı ile etkin bir depo yönetimine imkan veren bir yazılımdır. Depo Yönetim Sistemi Yazılımı içerisinde standart olarak gelen modüller şunlardır;"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
+                android:layout_margin="@dimen/satir_basi"
                 android:inputType="textMultiLine"
+                android:text="\t\t Depo Yönetim Sistemi Yazılımı, İşletme içerisindeki malzeme ve mal hareketliliğini sistematik ve doğru bir şekilde yapılmasını sağlayan ve ERP sistemine anlık veri akışı ile etkin bir depo yönetimine imkan veren bir yazılımdır. Depo Yönetim Sistemi Yazılımı içerisinde standart olarak gelen modüller şunlardır;"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textSize="16sp" />
+
             <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/satir_basi"
                 android:text="      • Barkodlu veya Barkodsuz Depo Giriş (Alış İrsaliyesi)"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textSize="16sp" />
-            <TextView
+                android:layout_margin="@dimen/satir_basi"
                 android:text="      • Depolar Arası Transfer İşlemleri"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textSize="16sp" />
-            <TextView
+                android:layout_margin="@dimen/satir_basi"
                 android:text="      • Barkodlu veya Barkodsuz Depo Çıkış (Satış İrsaliyesi)"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textSize="16sp" />
-            <TextView
+                android:layout_margin="@dimen/satir_basi"
                 android:text="      • Sayım"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textSize="16sp" />
-            <TextView
+                android:layout_margin="@dimen/satir_basi"
+                android:inputType="textMultiLine"
                 android:text="Bu ana modüllerin dışında opsiyonel olarak aşağıdaki modüller yazılım sistemine eklenebilmektedir."
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
+                android:layout_margin="@dimen/satir_basi"
+                android:layout_marginTop="15dp"
                 android:inputType="textMultiLine"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textSize="16sp" />
-            <TextView
                 android:text="Geriye Yönelik İzlenebilirlik"
+                android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textColor="#37a7db"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:inputType="textMultiLine"
-                android:textSize="16sp"
-                android:layout_marginTop="15dp"
-                android:textAppearance="?android:attr/textAppearanceLarge" />
+                android:textSize="16sp" />
+
             <TextView
-                android:text="Ürünlerin Barkodları veya Stok Kodları yanında, birleşik barkod veya ikincil barkodlama sistemi ile ürünlerin parti numaraları veya Son Tüketim Tarihleri gibi verileri de kaydederek, üretim veya satış sonrası geriye yönelik izlenebilirliğin sağlanması"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
+                android:layout_margin="@dimen/satir_basi"
                 android:inputType="textMultiLine"
+                android:text="\t\t Ürünlerin Barkodları veya Stok Kodları yanında, birleşik barkod veya ikincil barkodlama sistemi ile ürünlerin parti numaraları veya Son Tüketim Tarihleri gibi verileri de kaydederek, üretim veya satış sonrası geriye yönelik izlenebilirliğin sağlanması"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textSize="16sp" />
+
             <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/satir_basi"
+                android:layout_marginTop="15dp"
+                android:inputType="textMultiLine"
                 android:text="Barkodlama İşlemleri"
+                android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textColor="#37a7db"
+                android:textSize="16sp" />
+
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
+                android:layout_margin="@dimen/satir_basi"
                 android:inputType="textMultiLine"
-                android:textSize="16sp"
-                android:layout_marginTop="15dp"
-                android:textAppearance="?android:attr/textAppearanceLarge" />
-            <TextView
                 android:text="Standart barkodlamanın ilerisinde, Tekil barkodlama (*), Ağırlıklı Barkodlama ve bu iki barkodlamanın birlikte tek barkod üzerine basılması desteklenmektedir."
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
+                android:layout_margin="@dimen/satir_basi"
+                android:layout_marginTop="15dp"
                 android:inputType="textMultiLine"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textSize="16sp" />
-            <TextView
                 android:text="Depo Hücre Takibi"
+                android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textColor="#37a7db"
+                android:textSize="16sp" />
+
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
+                android:layout_margin="@dimen/satir_basi"
                 android:inputType="textMultiLine"
-                android:textSize="16sp"
-                android:layout_marginTop="15dp"
-                android:textAppearance="?android:attr/textAppearanceLarge" />
-            <TextView
                 android:text="Bu özellik ile depo / depolar içerisindeki hücrelerin takibi yapılabilmektedir. (**). Buradaki hücre takibi, hücrelerin hareket geçmişi ve hangi hücrelerde hangi ürünlerin ne kadar miktarda olduğunun takibidir."
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:inputType="textMultiLine"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textSize="16sp" />
+
             <TextView
-                android:text="Yerleştirme ve Toplama İşlemleri"
-                android:textColor="#37a7db"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                android:inputType="textMultiLine"
-                android:textSize="16sp"
+                android:layout_margin="@dimen/satir_basi"
                 android:layout_marginTop="15dp"
-                android:textAppearance="?android:attr/textAppearanceLarge" />
-            <TextView
-                android:text="Yerleştirme ve Toplama İşlemlerinde istenir ise, farklı algoritmalar kullanılabilmektedir. Bu algoritmalar;"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
                 android:inputType="textMultiLine"
+                android:text="Yerleştirme ve Toplama İşlemleri"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#37a7db"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/satir_basi"
+                android:inputType="textMultiLine"
+                android:text="Yerleştirme ve Toplama İşlemlerinde istenir ise, farklı algoritmalar kullanılabilmektedir. Bu algoritmalar;"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textSize="16sp" />
+
             <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/satir_basi"
                 android:text="      • Fifo,"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textSize="16sp" />
-            <TextView
+                android:layout_margin="@dimen/satir_basi"
                 android:text="      • Lifo,"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textSize="16sp" />
-            <TextView
+                android:layout_margin="@dimen/satir_basi"
                 android:text="      • Temizlemek için toplama,"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textSize="16sp" />
-            <TextView
+                android:layout_margin="@dimen/satir_basi"
                 android:text="      • en az lokasyon,"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textSize="16sp" />
-            <TextView
+                android:layout_margin="@dimen/satir_basi"
                 android:text="      • en yakın lokasyon,"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textSize="16sp" />
+
             <TextView
-                android:text="      • Lokasyon Değer Analiz sonucu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
+                android:layout_margin="@dimen/satir_basi"
+                android:text="      • Lokasyon Değer Analiz sonucu"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textSize="16sp" />
         </LinearLayout>
