@@ -7,9 +7,6 @@
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="fill_parent"
         android:layout_height="match_parent"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginTop="20dp"
         android:fillViewport="true">
 
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -43,6 +40,7 @@
                 android:layout_centerVertical="true"
                 android:inputType="textMultiLine"
                 android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginTop="15dp"
                 android:textSize="16sp"/>
             <TextView
                 android:text="PC, Server ve çevre birimlerinde oluşan donanım problemlerinin giderilmesine ve sorunsuz çalışmayı sağlamaya yönelik hizmetlerdir. “Parça Dahil” veya “Parça Hariç” olarak verilebilir. Servis sağlayıcı ile müşteri arasındaki hizmet sözleşmesinin içeriğine bağlı olarak, donanım, bakım-onarım hizmetleri kapsamında “Periyodik Bakım” hizmeti de söz konusu olabilir. Bu hizmetler, donanımların üzerinde koşan işletim sistemlerine ya da diğer yazılım bileşenlerine verilecek olan destek hizmetlerini kapsamaz."
@@ -62,6 +60,7 @@
                 android:layout_centerVertical="true"
                 android:inputType="textMultiLine"
                 android:textSize="16sp"
+                android:layout_marginTop="15dp"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
             <TextView
                 android:text="PC, Server ve çevre birimleri üzerinde yer alan işletim sistemlerinde ve bu işletim sistemleri (paketi) ile birlikte gelen servislerde, alt uygulamalarda karşılaşılan problemlerin giderilmesine ve sorunsuz çalışmayı sağlamaya yönelik hizmetlerdir. “Uzaktan” veya “Müşteri Yerinde” verilebilir. Bu hizmetler, işletim sistemleri dışında kalan yazılımlara-uygulamalara ve işletim sistemlerinin üzerinde çalıştığı donanım bileşenlerine verilecek olan destek hizmetlerini kapsamaz."

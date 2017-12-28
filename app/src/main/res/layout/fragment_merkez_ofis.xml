@@ -22,14 +22,28 @@
             android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:layout_marginBottom="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="5dp"
-            android:text="Adres: Adatepe Mh. Doğuş Cd. 207/AG D.E.Ü Tınaztepe Yerleşkesi Depark Teknoloji Geliştirme Bölgesi Beta Binası K:2 D: 203 Buca – İzmir-TR"
+            android:text="Adatepe Mh. Doğuş Cd. 207/AG"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/txt_adres1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="D.E.Ü Tınaztepe Yerleşkesi"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/txt_adres2"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Depark Teknoloji Geliştirme Bölgesi"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/txt_adres3"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Beta Binası K:2 D: 203 Buca – İzmir-TR"
             android:textSize="16sp" />
 
         <TextView

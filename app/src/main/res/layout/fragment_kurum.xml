@@ -6,9 +6,6 @@
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="fill_parent"
         android:layout_height="match_parent"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginTop="20dp"
         android:fillViewport="true">
 
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -25,16 +22,62 @@
 
 
             <TextView
-                android:text="Kurum Kültürü veya işletmelerde paylaşılmış bir geçmişi ifade eder. İşletmelerin yöneticileri, patronları, çalışanları ve paydaşları zaman içerisinde farkında olmadan bu kültürü oluşturur ve geliştirir. Kurum kültürünün, çalışanların firmalarına bağlılıkları, motivasyonları, iş performansları ve işletmeyi temsil şekillerindeki etkisi büyüktür. Bu kültür, işletmenin çalışanlara ve müşterilere karşı davranışlarının ve faaliyetlerin yürütülme biçiminin temel hareket noktasıdır. İşletmenin pazardaki bilinilirliği ve karakteri, planlı veya plansız olarak oluşan kurum kültürünün bir yansımasıdır. İşletmenin mevcut kültür ve beklenen kültür düzeyinin ölçülmesi işletme başarısı için kural, politika ve süreçlerden daha belirleyici olmaktadır. Kurum kültürü analizleri, uzmanlık ve yoğun bir çalışma gerektirmesi nedeniyle işletmeler tarafından zor bir süreç olarak görülmektedir. IT Global olarak Kurum Kültürü Danışmanlığı kapsamında, Türkiye yapısına uygun olarak, T.C. Bilim Sanayi ve Teknoloji Bakanlığının desteğiyle Teknoloji Geliştirme Bölgesinde ürettiğimiz yazılım ile bu zor ve maliyetli süreci kolaylıkla işletmelere uygulayabiliyoruz. Sistematik olarak uygulanabilen ve dijital olarak raporlanabilen bu hizmet kapsamında,
-                İşletme Genelinde,
-                Departman bazında,
-                Birim bazında,
-kültür analizleri yapılarak, mevcut ve istenen kurum kültürü raporlanabilmektedir. Gelişim senaryoları ile birlikte sunulan kültür raporu doğrultusunda işletmeler IK süreçlerinde (İşe alım, Terfi, vb.) karar mekanizmalarını teknik ve bilimsel veriler ile destekleyebilmektedirler. Kurum kültürü danıişmanlığını sağlayacağı faydalar;"
+                android:text="Kurum Kültürü veya işletmelerde paylaşılmış bir geçmişi ifade eder. İşletmelerin yöneticileri, patronları, çalışanları ve paydaşları zaman içerisinde farkında olmadan bu kültürü oluşturur ve geliştirir. Kurum kültürünün, çalışanların firmalarına bağlılıkları, motivasyonları, iş performansları ve işletmeyi temsil şekillerindeki etkisi büyüktür. Bu kültür, işletmenin çalışanlara ve müşterilere karşı davranışlarının ve faaliyetlerin yürütülme biçiminin temel hareket noktasıdır."
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
                 android:inputType="textMultiLine"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:text="İşletmenin pazardaki bilinilirliği ve karakteri, planlı veya plansız olarak oluşan kurum kültürünün bir yansımasıdır. İşletmenin mevcut kültür ve beklenen kültür düzeyinin ölçülmesi işletme başarısı için kural, politika ve süreçlerden daha belirleyici olmaktadır. Kurum kültürü analizleri, uzmanlık ve yoğun bir çalışma gerektirmesi nedeniyle işletmeler tarafından zor bir süreç olarak görülmektedir."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginTop="20dp"
+                android:textSize="16sp" />
+            <TextView
+                android:text="IT Global olarak Kurum Kültürü Danışmanlığı kapsamında, Türkiye yapısına uygun olarak, T.C. Bilim Sanayi ve Teknoloji Bakanlığının desteğiyle Teknoloji Geliştirme Bölgesinde ürettiğimiz yazılım ile bu zor ve maliyetli süreci kolaylıkla işletmelere uygulayabiliyoruz. Sistematik olarak uygulanabilen ve dijital olarak raporlanabilen bu hizmet kapsamında, "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginTop="20dp"
+                android:textSize="16sp" />
+            <TextView
+                android:text="İşletme Genelinde,"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:text="Departman bazında,"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:text="Birim bazında,"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:text="kültür analizleri yapılarak, mevcut ve istenen kurum kültürü raporlanabilmektedir. Gelişim senaryoları ile birlikte sunulan kültür raporu doğrultusunda işletmeler IK süreçlerinde (İşe alım, Terfi, vb.) karar mekanizmalarını teknik ve bilimsel veriler ile destekleyebilmektedirler. Kurum kültürü danıişmanlığını sağlayacağı faydalar;"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textSize="16sp" />
             <TextView

@@ -27,13 +27,22 @@
 
 
             <TextView
-                android:text="Rekabet ve globalleşme gibi çağımıza ait kriterin de etkisi ve yönlendirmesi ile işletmelerin faaliyetlerini sürdürebilmeleri ve gelişebilmeleri için kaynaklarını verimli bir biçimde kullanmaları gerekmektedir. Üretim (İmalat Sanayi) sektöründe faaliyet gösteren işletmelerde bu verimlilik ihtiyacı sistemin bir parçası değil sistemin kendisi olmaya başlamıştır. Bu durumda işletmelerin sistem ile uyumlu bir şekilde hareket edebilecek esnekliğe sahip olmaları gerekmektedir. Üretim işletmeleri bünyesinde verdiğimiz danışmanlık hizmetleri kapsamında işletmeler, üretim süreçlerini iyileştirerek, etkin ve verimli bir üretim sistemine sahip olmakta ve performans analizlerini gerçek zamanlı olarak yapabilmektedirler. Üretim Yönetim Danışmanlığı Hizmetlerimiz;"
+                android:text="Rekabet ve globalleşme gibi çağımıza ait kriterin de etkisi ve yönlendirmesi ile işletmelerin faaliyetlerini sürdürebilmeleri ve gelişebilmeleri için kaynaklarını verimli bir biçimde kullanmaları gerekmektedir. Üretim (İmalat Sanayi) sektöründe faaliyet gösteren işletmelerde bu verimlilik ihtiyacı sistemin bir parçası değil sistemin kendisi olmaya başlamıştır. Bu durumda işletmelerin sistem ile uyumlu bir şekilde hareket edebilecek esnekliğe sahip olmaları gerekmektedir. Üretim işletmeleri bünyesinde verdiğimiz danışmanlık hizmetleri kapsamında işletmeler, üretim süreçlerini iyileştirerek, etkin ve verimli bir üretim sistemine sahip olmakta ve performans analizlerini gerçek zamanlı olarak yapabilmektedirler."
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
                 android:inputType="textMultiLine"
                 android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+            <TextView
+                android:text="Üretim Yönetim Danışmanlığı Hizmetlerimiz;"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginTop="15dp"
                 android:textSize="16sp" />
             <TextView
                 android:text="      • Üretim süreçlerinin oluşturulması ve iyileştirilmesi"

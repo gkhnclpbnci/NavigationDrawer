@@ -114,10 +114,10 @@ public class BaslikBaseActivity extends AppCompatActivity implements NavigationV
                                         int groupPosition,
                                         int childPosition, long id) {
                 //Log.d("DEBUG", "submenu item clicked");
-                Toast.makeText(BaslikBaseActivity.this,
+               /* Toast.makeText(BaslikBaseActivity.this,
                         "Header: " + String.valueOf(groupPosition) +
                                 "\nItem: " + String.valueOf(childPosition), Toast.LENGTH_SHORT)
-                        .show();
+                        .show();*/
                 if (String.valueOf(groupPosition).equals("2")) {
                     displayPage2(childPosition);
 
@@ -220,15 +220,15 @@ public class BaslikBaseActivity extends AppCompatActivity implements NavigationV
                 fragment = new DepoFragment();
                 fragment_name = "DepoFragment";
                 break;
-            case 3:
+           /* case 3:
                 fragment = new KobiFragment();
                 fragment_name = "KobiFragment";
-                break;
-            case 4:
+                break;*/
+            case 3:
                 fragment = new ErpFragment();
                 fragment_name = "ErpFragment";
                 break;
-            case 5:
+            case 4:
                 fragment = new DonanimFragment();
                 fragment_name = "DonanimFragment";
                 break;
@@ -270,19 +270,19 @@ public class BaslikBaseActivity extends AppCompatActivity implements NavigationV
                 fragment = new YonetimFragment();
                 fragment_name = "YonetimFragment";
                 break;
-            case 1:
+           /* case 1:
                 fragment = new IhtiyacFragment();
                 fragment_name = "IhtiyacFragment";
-                break;
-            case 2:
+                break;*/
+            case 1:
                 fragment = new ArgeFragment();
                 fragment_name = "ArgeFragment";
                 break;
-            case 3:
+            case 2:
                 fragment = new GelistirmeFragment();
                 fragment_name = "GelistirmeFragment";
                 break;
-            case 4:
+            case 3:
                 fragment = new KurumFragment();
                 fragment_name = "KurumFragment";
 
@@ -344,14 +344,14 @@ public class BaslikBaseActivity extends AppCompatActivity implements NavigationV
         urunlerHeader.add("İdeaPro Üretim Yönetim Sistemi Yazılımı");
         urunlerHeader.add("İdeaktif B2B Müşteri Web Portalı Yazılımı");
         urunlerHeader.add("Depo Yönetim Sistemi Yazılımı");
-        urunlerHeader.add("KOBİ Kurum Kültürü Geliştirme Envanteri Yazılımı");
+      //  urunlerHeader.add("KOBİ Kurum Kültürü Geliştirme Envanteri Yazılımı");
         urunlerHeader.add("ERP Çözümleri");
         urunlerHeader.add("Donanım Ürünleri");
 
 
         List<String> hizmetlerHeader = new ArrayList<String>();
         hizmetlerHeader.add("Üretim Yönetimi Danışmanlığı\n");
-        hizmetlerHeader.add("İhtiyaç Planlama ve Stok Yönetim Danışmanlığı");
+       // hizmetlerHeader.add("İhtiyaç Planlama ve Stok Yönetim Danışmanlığı");
         hizmetlerHeader.add("Arge ve Bilgi Teknolojileri Danışmanlığı");
         hizmetlerHeader.add("İş Geliştirme Danışmanlığı");
         hizmetlerHeader.add("Kurum Kültürü (Örgüt Kültürü) Geliştirme Danışmanlığı\n");

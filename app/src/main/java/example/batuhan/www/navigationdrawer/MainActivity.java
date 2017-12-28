@@ -243,15 +243,15 @@ public class MainActivity extends AppCompatActivity
                 fragment = new DepoFragment();
                 fragment_name = "DepoFragment";
                 break;
-            case 3:
+         /*   case 3:
                 fragment = new KobiFragment();
                 fragment_name = "KobiFragment";
-                break;
-            case 4:
+                break;*/
+            case 3:
                 fragment = new ErpFragment();
                 fragment_name = "ErpFragment";
                 break;
-            case 5:
+            case 4:
                 fragment = new DonanimFragment();
                 fragment_name = "DonanimFragment";
                 break;
@@ -292,19 +292,19 @@ public class MainActivity extends AppCompatActivity
                 fragment = new YonetimFragment();
                 fragment_name = "YonetimFragment";
                 break;
-            case 1:
+           /* case 1:
                 fragment = new IhtiyacFragment();
                 fragment_name = "IhtiyacFragment";
-                break;
-            case 2:
+                break;*/
+            case 1:
                 fragment = new ArgeFragment();
                 fragment_name = "ArgeFragment";
                 break;
-            case 3:
+            case 2:
                 fragment = new GelistirmeFragment();
                 fragment_name = "GelistirmeFragment";
                 break;
-            case 4:
+            case 3:
                 fragment = new KurumFragment();
                 fragment_name = "KurumFragment";
 
@@ -366,14 +366,14 @@ public class MainActivity extends AppCompatActivity
         urunlerHeader.add("İdeaPro Üretim Yönetim Sistemi Yazılımı");
         urunlerHeader.add("İdeaktif B2B Müşteri Web Portalı Yazılımı");
         urunlerHeader.add("Depo Yönetim Sistemi Yazılımı");
-        urunlerHeader.add("KOBİ Kurum Kültürü Geliştirme Envanteri Yazılımı");
+      //  urunlerHeader.add("KOBİ Kurum Kültürü Geliştirme Envanteri Yazılımı");
         urunlerHeader.add("ERP Çözümleri");
         urunlerHeader.add("Donanım Ürünleri");
 
 
         List<String> hizmetlerHeader = new ArrayList<String>();
         hizmetlerHeader.add("Üretim Yönetimi Danışmanlığı\n");
-        hizmetlerHeader.add("İhtiyaç Planlama ve Stok Yönetim Danışmanlığı");
+       // hizmetlerHeader.add("İhtiyaç Planlama ve Stok Yönetim Danışmanlığı");
         hizmetlerHeader.add("Arge ve Bilgi Teknolojileri Danışmanlığı");
         hizmetlerHeader.add("İş Geliştirme Danışmanlığı");
         hizmetlerHeader.add("Kurum Kültürü (Örgüt Kültürü) Geliştirme Danışmanlığı\n");
@@ -469,7 +469,7 @@ public class MainActivity extends AppCompatActivity
         //geri tuşuna basılma durumunu yakalıyoruz
         if ((keyCode == KeyEvent.KEYCODE_BACK)) {
             AlertDialog.Builder alert = new AlertDialog.Builder(MainActivity.this);
-            alert.setTitle("Çıkmak İstediğinizden Eminmisiniz ?");
+            alert.setTitle("Çıkmak istediğinizden emin misiniz ?");
             alert.setPositiveButton("Evet", new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface arg0, int arg1) {
                     //evet seçilmesi durumunda yapılacak işlemler

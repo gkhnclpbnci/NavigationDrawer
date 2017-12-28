@@ -7,9 +7,6 @@
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="fill_parent"
         android:layout_height="match_parent"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginTop="20dp"
         android:fillViewport="true">
 
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -27,6 +24,7 @@
 İdeaPro Üretim Yönetim Sistemi Yazılımı, işletmelerin belirledikleri üretim felsefelerine (Yalın, JIT, vb.) uyumlaştırılabilir bir altyapıda makinelerinin ve ürünlerinin birbirleri ile haberleşebildikleri, uygun maliyetli, içeriğindeki sensörler ve prediktif yazılım özellikleri sayesinde üretimden gerçek zamanlı veri toplayabilen ve analiz ederek kullanıcılara öneriler sunabilen bir sistemdir.
 Bu yazılım ile, işletmelerin üretimdeki verimlilik ve etkinliklerinin arttırılması, maliyetlerin (zaman, fire, hurda, bakım, duruş) azaltılması sağlanır ve geriye yönelik işletme performansı ölçülebilir."
                 android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginTop="15dp"
                 android:textSize="16sp" />
             <TextView
                 android:textColor="#37a7db"
@@ -37,6 +35,7 @@ Bu yazılım ile, işletmelerin üretimdeki verimlilik ve etkinliklerinin arttı
                 android:layout_centerVertical="true"
                 android:inputType="textMultiLine"
                 android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginTop="15dp"
                 android:textSize="16sp"/>
             <TextView
                 android:textColor="#565151"
@@ -67,6 +66,7 @@ Bu yazılım ile, işletmelerin üretimdeki verimlilik ve etkinliklerinin arttı
                 android:layout_centerVertical="true"
                 android:inputType="textMultiLine"
                 android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginTop="15dp"
                 android:textSize="16sp"/>
 
             <ImageView
@@ -75,7 +75,7 @@ Bu yazılım ile, işletmelerin üretimdeki verimlilik ve etkinliklerinin arttı
                 android:layout_height="200dp"
                 android:src="@drawable/idepro1" />
             <TextView
-                android:text="Üretim alanındaki malzeme transferleri mobil cihazlar vasıtası ile gerçekleştirilebilmektedir. Aynı zamanda Tablet üzerinden, üretimde kullanılan makinalardaki doluluklar ve işletme kaynakları üzerindeki işler izlenebilmektedir. İşletme talep ettiği taktirde Üretim Sonu Kayıtlarını (Mamul, Yarımamul girişlerini) ve İş Emri kapamalarını mobil / Tablet modülü içerisinden gerçekleştirebilir. Bu modül işletme üretim alanında sabit PC konulamayan bölgelerde ve üretim alanında belirlenmiş koltukaltı ambarlarının bulunduğu yapılarda etkin bir şekilde kullanılmaktad"
+                android:text="Üretim alanındaki malzeme transferleri mobil cihazlar vasıtası ile gerçekleştirilebilmektedir. Aynı zamanda Tablet üzerinden, üretimde kullanılan makinalardaki doluluklar ve işletme kaynakları üzerindeki işler izlenebilmektedir. İşletme talep ettiği taktirde Üretim Sonu Kayıtlarını (Mamul, Yarımamul girişlerini) ve İş Emri kapamalarını mobil / Tablet modülü içerisinden gerçekleştirebilir. Bu modül işletme üretim alanında sabit PC konulamayan bölgelerde ve üretim alanında belirlenmiş koltukaltı ambarlarının bulunduğu yapılarda etkin bir şekilde kullanılmaktadır."
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
@@ -93,6 +93,7 @@ Bu yazılım ile, işletmelerin üretimdeki verimlilik ve etkinliklerinin arttı
                 android:layout_centerVertical="true"
                 android:inputType="textMultiLine"
                 android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginTop="15dp"
                 android:textSize="16sp"/>
             <ImageView
                 android:id="@+id/imageView1"
@@ -118,6 +119,7 @@ Bu yazılım ile, işletmelerin üretimdeki verimlilik ve etkinliklerinin arttı
                 android:layout_centerVertical="true"
                 android:inputType="textMultiLine"
                 android:textSize="16sp"
+                android:layout_marginTop="15dp"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
             <ImageView
                 android:id="@+id/imageView2"

@@ -7,9 +7,6 @@
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="fill_parent"
         android:layout_height="match_parent"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginTop="20dp"
         android:fillViewport="true">
 
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -77,13 +74,14 @@
                 android:textSize="16sp" />
             <TextView
                 android:text="Geriye Yönelik İzlenebilirlik"
-                android:textColor="#565151"
+                android:textColor="#37a7db"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
                 android:inputType="textMultiLine"
                 android:textSize="16sp"
+                android:layout_marginTop="15dp"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
             <TextView
                 android:text="Ürünlerin Barkodları veya Stok Kodları yanında, birleşik barkod veya ikincil barkodlama sistemi ile ürünlerin parti numaraları veya Son Tüketim Tarihleri gibi verileri de kaydederek, üretim veya satış sonrası geriye yönelik izlenebilirliğin sağlanması"
@@ -96,13 +94,14 @@
                 android:textSize="16sp" />
             <TextView
                 android:text="Barkodlama İşlemleri"
-                android:textColor="#565151"
+                android:textColor="#37a7db"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
                 android:inputType="textMultiLine"
                 android:textSize="16sp"
+                android:layout_marginTop="15dp"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
             <TextView
                 android:text="Standart barkodlamanın ilerisinde, Tekil barkodlama (*), Ağırlıklı Barkodlama ve bu iki barkodlamanın birlikte tek barkod üzerine basılması desteklenmektedir."
@@ -115,13 +114,14 @@
                 android:textSize="16sp" />
             <TextView
                 android:text="Depo Hücre Takibi"
-                android:textColor="#565151"
+                android:textColor="#37a7db"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
                 android:inputType="textMultiLine"
                 android:textSize="16sp"
+                android:layout_marginTop="15dp"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
             <TextView
                 android:text="Bu özellik ile depo / depolar içerisindeki hücrelerin takibi yapılabilmektedir. (**). Buradaki hücre takibi, hücrelerin hareket geçmişi ve hangi hücrelerde hangi ürünlerin ne kadar miktarda olduğunun takibidir."
@@ -134,13 +134,14 @@
                 android:textSize="16sp" />
             <TextView
                 android:text="Yerleştirme ve Toplama İşlemleri"
-                android:textColor="#565151"
+                android:textColor="#37a7db"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
                 android:inputType="textMultiLine"
                 android:textSize="16sp"
+                android:layout_marginTop="15dp"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
             <TextView
                 android:text="Yerleştirme ve Toplama İşlemlerinde istenir ise, farklı algoritmalar kullanılabilmektedir. Bu algoritmalar;"
