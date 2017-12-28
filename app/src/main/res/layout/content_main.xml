@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="example.batuhan.www.navigationdrawer.MainActivity"
+    tools:context="ideaktif.mobile.www.gokhan.MainActivity"
     tools:showIn="@layout/app_bar_main">
 
     <FrameLayout

@@ -9,12 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
-import example.batuhan.www.navigationdrawer.Baslik1Activity;
-import example.batuhan.www.navigationdrawer.Baslik2Activity;
-import example.batuhan.www.navigationdrawer.Baslik3Activity;
-import example.batuhan.www.navigationdrawer.BaslikBaseActivity;
-import example.batuhan.www.navigationdrawer.MainActivity;
-import example.batuhan.www.navigationdrawer.R;
+import ideaktif.mobile.www.gokhan.BaslikBaseActivity;
+import ideaktif.mobile.www.gokhan.R;
 
 /**
  * A simple {@link Fragment} subclass.

@@ -3,7 +3,8 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 26
     defaultConfig {
-        applicationId "example.batuhan.www.navigationdrawer"
+//        applicationId "example.batuhan.www.navigationdrawer"
+        applicationId "ideaktif.mobile.www.gokhan"
         minSdkVersion 16
         targetSdkVersion 26
         versionCode 1

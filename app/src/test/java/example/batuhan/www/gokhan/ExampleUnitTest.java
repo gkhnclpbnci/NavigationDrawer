@@ -1,4 +1,4 @@
-package example.batuhan.www.navigationdrawer;
+package ideaktif.mobile.www.gokhan;
 
 import org.junit.Test;
 

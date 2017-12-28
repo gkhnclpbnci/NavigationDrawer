@@ -1,9 +1,6 @@
 package pages;
 
 import android.app.Activity;
-import android.content.Context;
-import android.media.Image;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -13,8 +10,7 @@ import android.widget.ImageView;
 
 import com.squareup.picasso.Picasso;
 
-import example.batuhan.www.navigationdrawer.MainActivity;
-import example.batuhan.www.navigationdrawer.R;
+import ideaktif.mobile.www.gokhan.R;
 
 /**
  * A simple {@link Fragment} subclass.

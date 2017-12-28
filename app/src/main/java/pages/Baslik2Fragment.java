@@ -7,7 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import example.batuhan.www.navigationdrawer.R;
+import ideaktif.mobile.www.gokhan.R;
 
 
 public class Baslik2Fragment extends Fragment {

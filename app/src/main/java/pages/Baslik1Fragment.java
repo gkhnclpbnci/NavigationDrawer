@@ -1,19 +1,13 @@
 package pages;
 
 import android.app.Activity;
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v7.app.AlertDialog;
-import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import example.batuhan.www.navigationdrawer.Baslik1Activity;
-import example.batuhan.www.navigationdrawer.BaslikBaseActivity;
-import example.batuhan.www.navigationdrawer.MainActivity;
-import example.batuhan.www.navigationdrawer.R;
+import ideaktif.mobile.www.gokhan.R;
 
 
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="example.batuhan.www.navigationdrawer">
+    package="ideaktif.mobile.www.gokhan">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -17,7 +17,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name="ideaktif.mobile.www.gokhan.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -39,48 +39,48 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".MapsActivity"
+            android:name="ideaktif.mobile.www.gokhan.MapsActivity"
             android:label="@string/title_activity_maps" />
         <activity
-            android:name=".Baslik1Activity"
+            android:name="ideaktif.mobile.www.gokhan.Baslik1Activity"
             android:label="@string/title_activity_baslik1"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Baslik2Activity"
+            android:name="ideaktif.mobile.www.gokhan.Baslik2Activity"
             android:label="@string/title_activity_baslik2"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Baslik3Activity"
+            android:name="ideaktif.mobile.www.gokhan.Baslik3Activity"
             android:label="@string/title_activity_baslik3"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".BaslikBaseActivity"
+            android:name="ideaktif.mobile.www.gokhan.BaslikBaseActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".EkibimizBaseActivity"
+            android:name="ideaktif.mobile.www.gokhan.EkibimizBaseActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Ekibimiz1Activity"
+            android:name="ideaktif.mobile.www.gokhan.Ekibimiz1Activity"
             android:label="@string/title_activity_baslik1"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Ekibimiz2Activity"
+            android:name="ideaktif.mobile.www.gokhan.Ekibimiz2Activity"
             android:label="@string/title_activity_ekibimiz2"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Ekibimiz3Activity"
+            android:name="ideaktif.mobile.www.gokhan.Ekibimiz3Activity"
             android:label="@string/title_activity_ekibimiz3"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Ekibimiz4Activity"
+            android:name="ideaktif.mobile.www.gokhan.Ekibimiz4Activity"
             android:label="@string/title_activity_ekibimiz4"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Ekibimiz5Activity"
+            android:name="ideaktif.mobile.www.gokhan.Ekibimiz5Activity"
             android:label="@string/title_activity_ekibimiz5"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Ekibimiz6Activity"
+            android:name="ideaktif.mobile.www.gokhan.Ekibimiz6Activity"
             android:label="@string/title_activity_ekibimiz6"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>

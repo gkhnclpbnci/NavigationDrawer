@@ -7,15 +7,9 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 
-import example.batuhan.www.navigationdrawer.Baslik1Activity;
-import example.batuhan.www.navigationdrawer.Baslik2Activity;
-import example.batuhan.www.navigationdrawer.Baslik3Activity;
-import example.batuhan.www.navigationdrawer.BaslikBaseActivity;
-import example.batuhan.www.navigationdrawer.EkibimizBaseActivity;
-import example.batuhan.www.navigationdrawer.MainActivity;
-import example.batuhan.www.navigationdrawer.R;
+import ideaktif.mobile.www.gokhan.EkibimizBaseActivity;
+import ideaktif.mobile.www.gokhan.R;
 
 /**
  * A simple {@link Fragment} subclass.
