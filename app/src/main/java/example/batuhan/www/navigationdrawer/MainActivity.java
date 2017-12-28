@@ -121,6 +121,7 @@ public class MainActivity extends AppCompatActivity
                 if (String.valueOf(groupPosition).equals("2")) {
                     displayPage2(childPosition);
 
+
                 } else {
                     displayPage3(childPosition);
 
